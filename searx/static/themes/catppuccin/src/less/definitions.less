@@ -1,0 +1,230 @@
+/*
+ * SearXNG, A privacy-respecting, hackable metasearch engine
+ *
+ * To change the colors of the site, simple edit this variables
+ */
+
+.catppuccin-theme(@flavour) {
+  --color-accent: #catppuccin(@flavour) [blue];
+
+  &.accent-rosewater {
+    --color-accent: #catppuccin(@flavour) [rosewater];
+  }
+
+  &.accent-flamingo {
+    --color-accent: #catppuccin(@flavour) [flamingo];
+  }
+
+  &.accent-pink {
+    --color-accent: #catppuccin(@flavour) [pink];
+  }
+
+  &.accent-mauve {
+    --color-accent: #catppuccin(@flavour) [mauve];
+  }
+
+  &.accent-red {
+    --color-accent: #catppuccin(@flavour) [red];
+  }
+
+  &.accent-maroon {
+    --color-accent: #catppuccin(@flavour) [maroon];
+  }
+
+  &.accent-peach {
+    --color-accent: #catppuccin(@flavour) [peach];
+  }
+
+  &.accent-yellow {
+    --color-accent: #catppuccin(@flavour) [yellow];
+  }
+
+  &.accent-green {
+    --color-accent: #catppuccin(@flavour) [green];
+  }
+
+  &.accent-teal {
+    --color-accent: #catppuccin(@flavour) [teal];
+  }
+
+  &.accent-sky {
+    --color-accent: #catppuccin(@flavour) [sky];
+  }
+
+  &.accent-sapphire {
+    --color-accent: #catppuccin(@flavour) [sapphire];
+  }
+
+  &.accent-lavender {
+    --color-accent: #catppuccin(@flavour) [lavender];
+  }
+
+  /// Base Colors
+  --color-base-font: #catppuccin(@flavour) [text];
+  --color-base-font-rgb: red(#catppuccin(@flavour) [text]), green(#catppuccin(@flavour) [text]), blue(#catppuccin(@flavour) [text]);
+  --color-base-background: #catppuccin(@flavour) [base];
+  --color-base-background-mobile: #catppuccin(@flavour) [base];
+  --color-url-font: var(--color-accent);
+  --color-url-visited-font: var(--color-accent);
+  /// Header Colors
+  --color-header-background: #catppuccin(@flavour) [mantle];
+  --color-header-border: #catppuccin(@flavour) [mantle];
+  /// Footer Colors
+  --color-footer-background: #catppuccin(@flavour) [mantle];
+  --color-footer-border: #catppuccin(@flavour) [mantle];
+  /// Sidebar Colors
+  --color-sidebar-border: #catppuccin(@flavour) [base];
+  --color-sidebar-font: #catppuccin(@flavour) [text];
+  --color-sidebar-background: #catppuccin(@flavour) [base];
+  /// BackToTop Colors
+  --color-backtotop-font: #catppuccin(@flavour) [subtext1];
+  --color-backtotop-border: #catppuccin(@flavour) [surface0];
+  --color-backtotop-background: #catppuccin(@flavour) [surface0];
+  /// Button Colors
+  --color-btn-background: var(--color-accent);
+  --color-btn-font: #catppuccin(@flavour) [base];
+  --color-show-btn-background: var(--color-accent);
+  --color-show-btn-font: #catppuccin(@flavour) [base];
+  /// Search Input Colors
+  --color-search-border: #catppuccin(@flavour) [surface0];
+  --color-search-shadow: 0 2px 8px #catppuccin(@flavour) [crust];
+  --color-search-background: #catppuccin(@flavour) [surface0];
+  --color-search-font: #catppuccin(@flavour) [text];
+  --color-search-background-hover: var(--color-accent);
+  /// Modal Colors
+  --color-error: #catppuccin(@flavour) [red];
+  --color-error-background: #catppuccin(@flavour) [surface0];
+  --color-warning: #catppuccin(@flavour) [yellow];
+  --color-warning-background: #catppuccin(@flavour) [surface0];
+  --color-success: #catppuccin(@flavour) [green];
+  --color-success-background: #catppuccin(@flavour) [surface0];
+  /// Categories Colors
+  --color-categories-item-selected-font: #catppuccin(@flavour) [text];
+  --color-categories-item-border-selected: var(--color-accent);
+  /// Autocomplete Colors
+  --color-autocomplete-font: #catppuccin(@flavour) [subtext1];
+  --color-autocomplete-border: #catppuccin(@flavour) [surface0];
+  --color-autocomplete-shadow: 0 2px 8px #catppuccin(@flavour) [crust];
+  --color-autocomplete-background: #catppuccin(@flavour) [surface0];
+  --color-autocomplete-background-hover: #catppuccin(@flavour) [surface1];
+  /// Answer Colors
+  --color-answer-font: #catppuccin(@flavour) [text]; // same as --color-base-font
+  --color-answer-background: #catppuccin(@flavour) [mantle];
+  /// Results Colors
+  --color-result-background: #catppuccin(@flavour) [mantle];
+  --color-result-border: #catppuccin(@flavour) [base];
+  --color-result-url-font: #catppuccin(@flavour) [subtext1];
+  --color-result-vim-selected: #catppuccin(@flavour) [surface0];
+  --color-result-vim-arrow: var(--color-accent);
+  --color-result-description-highlight-font: #catppuccin(@flavour) [text];
+  --color-result-link-font: var(--color-accent);
+  --color-result-link-font-highlight: var(--color-accent);
+  --color-result-link-visited-font: var(--color-accent);
+  --color-result-publishdate-font: #catppuccin(@flavour) [surface2];
+  --color-result-engines-font: #catppuccin(@flavour) [surface2];
+  --color-result-search-url-border: #catppuccin(@flavour) [surface2];
+  --color-result-search-url-font: #catppuccin(@flavour) [text];
+  // Images Colors
+  --color-result-image-span-font: #catppuccin(@flavour) [text];
+  --color-result-image-span-font-selected: #catppuccin(@flavour) [base];
+  --color-result-image-background: #catppuccin(@flavour) [mantle];
+  /// Settings Colors
+  --color-settings-tr-hover: #catppuccin(@flavour) [surface0];
+  --color-settings-engine-description-font: #catppuccin(@flavour) [text];
+  --color-settings-table-group-background: #catppuccin(@flavour) [surface0];
+  /// Detail modal
+  --color-result-detail-font: #catppuccin(@flavour) [text];
+  --color-result-detail-label-font: #catppuccin(@flavour) [subtext0];
+  --color-result-detail-background: #catppuccin(@flavour) [base];
+  --color-result-detail-hr: #catppuccin(@flavour) [base];
+  --color-result-detail-link: var(--color-accent);
+  --color-result-detail-loader-border: rgba(255, 255, 255, 0.2);
+  --color-result-detail-loader-borderleft: #catppuccin(@flavour) [crust];
+  /// Toolkit Colors
+  --color-toolkit-badge-font: #catppuccin(@flavour) [text];
+  --color-toolkit-badge-background: #catppuccin(@flavour) [surface0];
+  --color-toolkit-kbd-font: #catppuccin(@flavour) [text];
+  --color-toolkit-kbd-background: #catppuccin(@flavour) [surface0];
+  --color-toolkit-dialog-border: #catppuccin(@flavour) [mantle];
+  --color-toolkit-dialog-background: #catppuccin(@flavour) [mantle];
+  --color-toolkit-tabs-label-border: #catppuccin(@flavour) [base];
+  --color-toolkit-tabs-section-border: #catppuccin(@flavour) [base];
+  --color-toolkit-select-background: #catppuccin(@flavour) [surface0];
+  --color-toolkit-select-border: #catppuccin(@flavour) [surface0];
+  --color-toolkit-select-background-hover: #catppuccin(@flavour) [surface1];
+  --color-toolkit-input-text-font: #catppuccin(@flavour) [text];
+  --color-toolkit-checkbox-onoff-off-background: #catppuccin(@flavour) [surface0];
+  --color-toolkit-checkbox-onoff-on-background: #catppuccin(@flavour) [surface0];
+  --color-toolkit-checkbox-onoff-on-mark-background: #catppuccin(@flavour) [green];
+  --color-toolkit-checkbox-onoff-on-mark-color: #catppuccin(@flavour) [mantle];
+  --color-toolkit-checkbox-onoff-off-mark-background: #catppuccin(@flavour) [red];
+  --color-toolkit-checkbox-onoff-off-mark-color: #catppuccin(@flavour) [mantle];
+  --color-toolkit-checkbox-label-background: #catppuccin(@flavour) [base];
+  --color-toolkit-checkbox-label-border: #catppuccin(@flavour) [mantle];
+  --color-toolkit-checkbox-input-border: var(--color-accent);
+  --color-toolkit-engine-tooltip-border: #catppuccin(@flavour) [surface0];
+  --color-toolkit-engine-tooltip-background: #catppuccin(@flavour) [surface0];
+  --color-toolkit-loader-border: rgba(255, 255, 255, 0);
+  --color-toolkit-loader-borderleft: #catppuccin(@flavour) [crust];
+  --color-doc-code: #catppuccin(@flavour) [rosewater];
+  --color-doc-code-background: #catppuccin(@flavour) [mantle];
+}
+
+/// Light Theme
+:root {
+  .catppuccin-theme(latte);
+}
+
+/// Dark Theme (autoswitch based on device pref)
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    .catppuccin-theme(mocha);
+  }
+}
+
+:root.theme-frappe {
+  .catppuccin-theme(frappe);
+}
+
+:root.theme-macchiato {
+  .catppuccin-theme(macchiato);
+}
+
+:root.theme-mocha {
+  .catppuccin-theme(mocha);
+}
+
+/// General Size
+@results-width: 45rem;
+@results-sidebar-width: 25rem;
+@results-offset: 10rem;
+@results-tablet-offset: 0.5rem;
+@results-gap: 5rem;
+@results-margin: 0.125rem;
+@result-padding: 1rem;
+@results-image-row-height: 12rem;
+@results-image-row-height-phone: 6rem;
+@search-width: 44rem;
+// heigh of #search, see detail.less
+@search-height: 7.6rem;
+
+/// Device Size
+/// @desktop > @tablet
+@tablet: 79.75em; // see https://github.com/searxng/searxng/issues/874
+@phone: 50em;
+@small-phone: 35em;
+@ultra-small-phone: 20rem;
+
+/// From style.less
+@stacked-bar-chart: rgb(0, 0, 0);
+
+/// Load fonts from this directory.
+@icon-font-path: "../../../fonts/";
+//** File name for all font files.
+@icon-font-name: "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id: "glyphicons_halflingsregular";
+
+// decoration of the select HTML elements
+@select-light-svg-path: "../svg/select-light.svg";
+@select-dark-svg-path: "../svg/select-dark.svg";

@@ -1,0 +1,52 @@
+<fieldset>{{- '' -}}
+  <legend id="pref_theme">{{- _('Theme') -}}</legend>{{- '' -}}
+  <div class="value">{{- '' -}}
+    <select name="theme" aria-labelledby="pref_theme">{{- '' -}}
+      {%- for name in themes -%}
+        <option value="{{ name }}"
+                {%- if name == theme %} selected="selected"{%- endif -%}>
+                {{- name | capitalize -}}
+        </option>
+      {%- endfor -%}
+    </select>{{- '' -}}
+  </div>{{- '' -}}
+  <div class="description">
+    {{- _('Change SearXNG layout') -}}
+  </div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+<fieldset>{{- '' -}}
+  <legend id="pref_catppuccin_style">{{- _('Theme style') -}}</legend>{{- '' -}}
+  <div class="value">{{- '' -}}
+    <select name="catppuccin_style" aria-labelledby="pref_catppuccin_style">
+      {%- for name in ['auto', 'latte', 'frappe', 'macchiato', 'mocha'] -%}
+        <option value="{{ name }}"
+                {%- if name == preferences.get_value('catppuccin_style') %} selected="selected" {%- endif -%}>
+                {{- _(name) | capitalize -}}
+        </option>
+      {%- endfor -%}
+    </select>{{- '' -}}
+  </div>{{- '' -}}
+  <div class="description">
+    {{- _('Choose auto to follow your browser settings') -}}
+  </div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+<fieldset>{{- '' -}}
+    <legend id="pref_catppuccin_accent">{{- _('Theme accent') -}}</legend>{{- '' -}}
+    <div class="value">{{- '' -}}
+        <select name="catppuccin_accent" aria-labelledby="pref_catppuccin_accent">
+            {%- for name in ['rosewater', 'flamingo', 'pink', 'mauve', 'red', 'maroon', 'peach', 'yellow', 'green', 'teal', 'sky', 'sapphire', 'blue', 'lavender'] -%}
+            <option value="{{ name }}"
+                    {%- if name == preferences.get_value('catppuccin_accent') %} selected="selected" {%- endif -%}>
+            {{- _(name) | capitalize -}}
+            </option>
+            {%- endfor -%}
+        </select>{{- '' -}}
+    </div>{{- '' -}}
+    <div class="description">
+        {{- _('Color to use for links, buttons etc') -}}
+    </div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+{%- include 'catppuccin/preferences/center_alignment.html' -%}
