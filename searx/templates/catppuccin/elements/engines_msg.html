@@ -5,23 +5,18 @@
   <details class="sidebar-collapsable">
   {% endif %}
     <summary class="title" id="engines_msg-title">{{ _('Messages from the search engines') }}</summary>
-    <div class="dialog-error" role="alert">
-      {{ icon_big('warning') }}
-      <div>
-        <p>
-          <strong>{{ _('Error!') }}</strong>
-          {{ _('Engines cannot retrieve results') }}:
-        </p>
-        {%- for engine_name, error_type in unresponsive_engines -%}
-          <p>{{- engine_name }} (
-            <a href="{{ url_for('stats', engine=engine_name|e) }}"
-               title="{{ _('View error logs and submit a bug report') }}">
-               {{- error_type -}}
-            </a>
-            ){{- '' -}}
-          </p>
-        {%- endfor -%}
-      </div>
-    </div>
+    <table class="engine-stats" id="engines_msg-table">
+      {%- for engine_name, error_type in unresponsive_engines -%}
+      <tr>
+        <td class="engine-name">
+          <a href="{{ url_for('stats', engine=engine_name|e) }}"
+             title="{{ _('View error logs and submit a bug report') }}">
+             {{- engine_name -}}
+          </a>
+        </td>
+        <td class="response-error">{{- error_type -}}</td>
+      </tr>
+      {%- endfor -%}
+    </table>
   </details>
 </div>
