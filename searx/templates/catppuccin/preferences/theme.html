@@ -36,7 +36,7 @@
     <legend id="pref_catppuccin_accent">{{- _('Theme accent') -}}</legend>{{- '' -}}
     <div class="value">{{- '' -}}
         <select name="catppuccin_accent" aria-labelledby="pref_catppuccin_accent">
-            {%- for name in ['rosewater', 'flamingo', 'pink', 'mauve', 'red', 'maroon', 'peach', 'yellow', 'green', 'teal', 'sky', 'sapphire', 'blue', 'lavender'] -%}
+            {%- for name in ['blue', 'flamingo', 'green', 'lavender', 'maroon', 'mauve', 'peach', 'pink', 'red', 'rosewater', 'sapphire', 'sky', 'teal', 'yellow'] -%}
             <option value="{{ name }}"
                     {%- if name == preferences.get_value('catppuccin_accent') %} selected="selected" {%- endif -%}>
             {{- _(name) | capitalize -}}
