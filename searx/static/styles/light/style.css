@@ -118,5 +118,5 @@
 }
 
 select {
-  background-image: url(./select.svg);
+  background-image: url(../_common/select-light.svg);
 }

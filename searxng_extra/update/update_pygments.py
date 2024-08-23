@@ -13,8 +13,14 @@ from pygments.formatters.html import HtmlFormatter
 
 from searx import searx_dir
 
-FILE_LIGHT_THEME = Path(searx_dir) / 'static/styles/light/pygments.css'
-FILE_DARK_THEME = Path(searx_dir) / 'static/styles/dark/pygments.css'
+PYGMENTS_CSS_FILES = {
+    'static/styles/dark/pygments.css': 'lightbulb',
+    'static/styles/frappe/pygments.css': 'catppuccin-frappe',
+    'static/styles/latte/pygments.css': 'catppuccin-latte',
+    'static/styles/light/pygments.css': 'default',
+    'static/styles/macchiato/pygments.css': 'catppuccin-macchiato',
+    'static/styles/mocha/pygments.css': 'catppuccin-mocha',
+}
 
 HEADER = f"""\
 /*
@@ -43,19 +49,16 @@ class Formatter(HtmlFormatter):  # pylint: disable=missing-class-docstring
         return style_lines
 
 
-def generate_css(style) -> str:
+def generate_css(style_name) -> str:
     css = HEADER
-    for line in Formatter(style=style).get_style_lines():
+    for line in Formatter(style=style_name).get_style_lines():
         css += '\n  ' + line
     css += FOOTER
     return css
 
 
 if __name__ == '__main__':
-    print("update: %s" % FILE_LIGHT_THEME)
-    with FILE_LIGHT_THEME.open('w', encoding='utf8') as f:
-        f.write(generate_css('default'))
-
-    print("update: %s" % FILE_DARK_THEME)
-    with FILE_DARK_THEME.open('w', encoding='utf8') as f:
-        f.write(generate_css('lightbulb'))
+    for file, style in PYGMENTS_CSS_FILES.items():
+        print("update: %s" % file)
+        with open(Path(searx_dir) / file, 'w', encoding='utf-8') as f:
+            f.write(generate_css(style))
