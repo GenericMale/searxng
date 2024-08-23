@@ -178,6 +178,11 @@ def get_themes(templates_path):
     return os.listdir(templates_path)
 
 
+def get_styles(styles_path):
+    """Returns available styles for the simple theme."""
+    return sorted(css.parent.name for css in pathlib.Path(styles_path).glob('*/style.css'))
+
+
 def get_hash_for_file(file: pathlib.Path) -> str:
     m = hashlib.sha1()
     with file.open('rb') as f:

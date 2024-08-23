@@ -76,6 +76,7 @@ from searx.webutils import (
     get_static_files,
     get_result_templates,
     get_themes,
+    get_styles,
     exception_classname_to_text,
     new_hmac,
     is_hmac_of,
@@ -146,6 +147,8 @@ default_theme = settings['ui']['default_theme']
 templates_path = settings['ui']['templates_path']
 themes = get_themes(templates_path)
 result_templates = get_result_templates(templates_path)
+styles_path = settings['ui']['styles_path']
+styles = get_styles(styles_path)
 
 STATS_SORT_PARAMETERS = {
     'name': (False, 'name', ''),
@@ -396,6 +399,7 @@ def render(template_name: str, **kwargs):
     kwargs['query_in_title'] = request.preferences.get_value('query_in_title')
     kwargs['safesearch'] = str(request.preferences.get_value('safesearch'))
     kwargs['theme'] = request.preferences.get_value('theme')
+    kwargs['style'] = request.preferences.get_value('simple_style')
     kwargs['method'] = request.preferences.get_value('method')
     kwargs['categories_as_tabs'] = list(settings['categories_as_tabs'].keys())
     kwargs['categories'] = get_enabled_categories(settings['categories_as_tabs'].keys())
@@ -476,7 +480,7 @@ def pre_request():
 
     client_pref = ClientPref.from_http_request(request)
     # pylint: disable=redefined-outer-name
-    preferences = Preferences(themes, list(categories.keys()), engines, plugins, client_pref)
+    preferences = Preferences(themes, styles, list(categories.keys()), engines, plugins, client_pref)
 
     user_agent = request.headers.get('User-Agent', '').lower()
     if 'webkit' in user_agent and 'android' in user_agent:
@@ -1015,6 +1019,7 @@ def preferences():
         autocomplete_backends = autocomplete_backends,
         shortcuts = {y: x for x, y in engine_shortcuts.items()},
         themes = themes,
+        theme_styles = styles,
         plugins = plugins,
         doi_resolvers = settings['doi_resolvers'],
         current_doi_resolver = get_doi_resolver(request.preferences),

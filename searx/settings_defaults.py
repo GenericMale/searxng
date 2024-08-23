@@ -18,7 +18,6 @@ searx_dir = abspath(dirname(__file__))
 logger = logging.getLogger('searx')
 OUTPUT_FORMATS = ['html', 'csv', 'json', 'rss']
 SXNG_LOCALE_TAGS = ['all', 'auto'] + list(l[0] for l in sxng_locales)
-SIMPLE_STYLE = ('auto', 'light', 'dark')
 CATEGORIES_AS_TABS = {
     'general': {},
     'images': {},
@@ -190,10 +189,11 @@ SCHEMA = {
         'static_path': SettingsDirectoryValue(str, os.path.join(searx_dir, 'static')),
         'static_use_hash': SettingsValue(bool, False, 'SEARXNG_STATIC_USE_HASH'),
         'templates_path': SettingsDirectoryValue(str, os.path.join(searx_dir, 'templates')),
+        'styles_path': SettingsDirectoryValue(str, os.path.join(searx_dir, 'static', 'styles')),
         'default_theme': SettingsValue(str, 'simple'),
         'default_locale': SettingsValue(str, ''),
         'theme_args': {
-            'simple_style': SettingsValue(SIMPLE_STYLE, 'auto'),
+            'simple_style': SettingsValue(str, 'auto'),
         },
         'center_alignment': SettingsValue(bool, False),
         'results_on_new_tab': SettingsValue(bool, False),

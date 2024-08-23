@@ -12,8 +12,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <title>{% block title %}{% endblock %}{{ instance_name }}</title>
   {% block meta %}{% endblock %}
-  {% if preferences.get_value('simple_style') != 'auto' %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/' ~ preferences.get_value('simple_style') ~ '/style.css') }}" type="text/css" media="screen" />
+  {% if style != 'auto' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/' ~ style ~ '/style.css') }}" type="text/css" media="screen" />
   {% else %}
   <style>
     @import url("{{ url_for('static', filename='styles/light/style.css') }}") not (prefers-color-scheme: dark);
