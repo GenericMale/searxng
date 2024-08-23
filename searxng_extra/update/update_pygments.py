@@ -13,7 +13,8 @@ from pygments.formatters.html import HtmlFormatter
 
 from searx import searx_dir
 
-LESS_FILE = Path(searx_dir) / 'static/themes/simple/src/generated/pygments.less'
+FILE_LIGHT_THEME = Path(searx_dir) / 'static/styles/light/pygments.css'
+FILE_DARK_THEME = Path(searx_dir) / 'static/styles/dark/pygments.css'
 
 HEADER = f"""\
 /*
@@ -21,23 +22,10 @@ HEADER = f"""\
    using pygments version {pygments.__version__}
 */
 
+.code-highlight {{
 """
 
-START_LIGHT_THEME = """
-.code-highlight {
-"""
-
-END_LIGHT_THEME = """
-}
-"""
-
-START_DARK_THEME = """
-.code-highlight-dark(){
-  .code-highlight {
-"""
-
-END_DARK_THEME = """
-  }
+FOOTER = """
 }
 """
 
@@ -55,18 +43,19 @@ class Formatter(HtmlFormatter):  # pylint: disable=missing-class-docstring
         return style_lines
 
 
-def generat_css(light_style, dark_style) -> str:
-    css = HEADER + START_LIGHT_THEME
-    for line in Formatter(style=light_style).get_style_lines():
+def generate_css(style) -> str:
+    css = HEADER
+    for line in Formatter(style=style).get_style_lines():
         css += '\n  ' + line
-    css += END_LIGHT_THEME + START_DARK_THEME
-    for line in Formatter(style=dark_style).get_style_lines():
-        css += '\n    ' + line
-    css += END_DARK_THEME
+    css += FOOTER
     return css
 
 
 if __name__ == '__main__':
-    print("update: %s" % LESS_FILE)
-    with LESS_FILE.open('w', encoding='utf8') as f:
-        f.write(generat_css('default', 'lightbulb'))
+    print("update: %s" % FILE_LIGHT_THEME)
+    with FILE_LIGHT_THEME.open('w', encoding='utf8') as f:
+        f.write(generate_css('default'))
+
+    print("update: %s" % FILE_DARK_THEME)
+    with FILE_DARK_THEME.open('w', encoding='utf8') as f:
+        f.write(generate_css('lightbulb'))

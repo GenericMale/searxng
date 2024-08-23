@@ -1,5 +1,3 @@
-@import "../generated/pygments.less";
-
 .codelines {
   margin: @results-margin 0 0 0;
   padding: @result-padding 0 0 0;
@@ -35,17 +33,3 @@
 }
 
 .code-highlight-sxng();
-
-/// Dark Theme (autoswitch based on device pref)
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-    .code-highlight-dark();
-    .code-highlight-sxng();
-  }
-}
-
-// Dark Theme by preferences
-:root.theme-dark {
-  .code-highlight-dark();
-  .code-highlight-sxng();
-}

@@ -6,7 +6,6 @@ STATIC_BUILD_COMMIT="[build] /static"
 STATIC_BUILT_PATHS=(
     'searx/static/themes/simple/css'
     'searx/static/themes/simple/js'
-    'searx/static/themes/simple/src/generated/pygments.less'
     'searx/static/themes/simple/img'
     'searx/templates/simple/searxng-wordmark.min.svg'
     'searx/templates/simple/icons.html'

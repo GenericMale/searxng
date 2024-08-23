@@ -355,7 +355,7 @@ select {
     -moz-appearance: none;
     border-width: 0 2rem 0 0;
     border-color: transparent;
-    background: data-uri('image/svg+xml;charset=UTF-8', @select-light-svg-path) no-repeat;
+    background-repeat: no-repeat;
     background-position-x: calc(100% + 2rem);
     background-size: 2rem;
     background-origin: content-box;
@@ -372,17 +372,6 @@ select {
     option {
       background-color: var(--color-base-background);
     }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    html.theme-auto select,
-    html.theme-dark select {
-      background-image: data-uri('image/svg+xml;charset=UTF-8', @select-dark-svg-path);
-    }
-  }
-
-  html.theme-dark select {
-    background-image: data-uri('image/svg+xml;charset=UTF-8', @select-dark-svg-path);
   }
 }
 
