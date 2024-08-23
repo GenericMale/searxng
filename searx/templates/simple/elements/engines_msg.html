@@ -1,7 +1,7 @@
 <div id="engines_msg">
   {% if not results and not answers %}
   <details class="sidebar-collapsable" open>
-    <summary class="title" id="engines_msg-title">{{ _('Response time') }}</summary>
+    <summary class="title" id="engines_msg-title">{{ _('Messages from the search engines') }}</summary>
   {% else %}
   <details class="sidebar-collapsable">
     <summary class="title" id="engines_msg-title">{{ _('Response time') }}: {{ timings[-1].total | round(1) }} {{ _('seconds') }}</summary>
