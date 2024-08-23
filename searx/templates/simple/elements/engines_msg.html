@@ -1,10 +1,11 @@
 <div id="engines_msg">
   {% if not results and not answers %}
   <details class="sidebar-collapsable" open>
+    <summary class="title" id="engines_msg-title">{{ _('Response time') }}</summary>
   {% else %}
   <details class="sidebar-collapsable">
+    <summary class="title" id="engines_msg-title">{{ _('Response time') }}: {{ timings[-1].total | round(1) }} {{ _('seconds') }}</summary>
   {% endif %}
-    <summary class="title" id="engines_msg-title">{{ _('Response time') }}</summary>
     <table class="engine-stats" id="engines_msg-table">
       {%- for engine_name, error_type in unresponsive_engines -%}
       <tr>
