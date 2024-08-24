@@ -4,7 +4,7 @@
     <summary class="title" id="engines_msg-title">{{ _('Messages from the search engines') }}</summary>
   {% else %}
   <details class="sidebar-collapsable">
-    <summary class="title" id="engines_msg-title">{{ _('Response time') }}: {{ timings[-1].total | round(1) }} {{ _('seconds') }}</summary>
+    <summary class="title" id="engines_msg-title">{{ _('Response time') }}: {{ max_response_time | round(1) }} {{ _('seconds') }}</summary>
   {% endif %}
     <table class="engine-stats" id="engines_msg-table">
       {%- for engine_name, error_type in unresponsive_engines -%}
@@ -18,13 +18,13 @@
         <td class="response-error">{{- error_type -}}</td>
       </tr>
       {%- endfor -%}
-      {%- for timing in timings | reverse -%}
+      {%- for engine_name, response_time in timings -%}
       <tr>
-        <td class="engine-name"><a href="{{ url_for('stats', engine=timing.engine|e) }}">{{ timing.engine }}</a></td>
+        <td class="engine-name"><a href="{{ url_for('stats', engine=engine_name|e) }}">{{ engine_name }}</a></td>
         <td class="response-time">
-          <div class="bar-chart-value">{{- timing.total | round(1) -}}</div>
-          <div class="bar-chart-graph" aria-labelledby="{{timing.engine}}_time" aria-hidden="true">
-            <div class="bar-chart-bar bar{{ (100 * timing.total / timings[-1].total) | round | int }}"></div>
+          <div class="bar-chart-value">{{- response_time | round(1) -}}</div>
+          <div class="bar-chart-graph" aria-labelledby="{{engine_name}}_time" aria-hidden="true">
+            <div class="bar-chart-bar bar{{ (100 * response_time / max_response_time) | round | int }}"></div>
           </div>
         </td>
       </tr>
