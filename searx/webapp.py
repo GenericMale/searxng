@@ -764,7 +764,7 @@ def search():
     # timings: get engine response times sorted from slowest to fastest
     timings = webutils.get_engine_timings(result_container.get_timings())
     # first entry in list is the slowest engine. [0] on object is engine name, [1] is total time
-    max_response_time = timings[0][1]
+    max_response_time = timings[0][1] if len(timings) > 0 else None
 
     # search_query.lang contains the user choice (all, auto, en, ...)
     # when the user choice is "auto", search.search_query.lang contains the detected language
