@@ -28,6 +28,7 @@ if TYPE_CHECKING:
     from searx.results import ResultContainer
     from searx.search import SearchQuery
     from searx.results import UnresponsiveEngine
+    from searx.results import Timing
 
 VALID_LANGUAGE_CODE = re.compile(r'^[a-z]{2,3}(-[a-zA-Z]{2})?$')
 
@@ -80,6 +81,11 @@ def get_translated_errors(unresponsive_engines: Iterable[UnresponsiveEngine]):
         translated_errors.append((unresponsive_engine.engine, error_msg))
 
     return sorted(translated_errors, key=lambda e: e[0])
+
+
+def get_engine_timings(timings: Iterable[Timing]):
+    engine_timings = [(timing.engine, timing.total) for timing in timings]
+    return sorted(engine_timings, reverse=True, key=lambda e: e[1])
 
 
 class CSVWriter:
