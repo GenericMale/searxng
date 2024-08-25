@@ -88,8 +88,6 @@ class ViewsTestCase(SearxTestCase):  # pylint: disable=missing-class-docstring, 
         original_preferences_get_value = Preferences.get_value
 
         def preferences_get_value(preferences_self, user_setting_name: str):
-            if user_setting_name == 'theme':
-                return 'simple'
             return original_preferences_get_value(preferences_self, user_setting_name)
 
         self.setattr4test(Preferences, 'get_value', preferences_get_value)

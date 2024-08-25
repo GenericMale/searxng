@@ -7,39 +7,15 @@ declare _creset
 themes.help(){
     cat <<EOF
 themes.:
-  all       : build all themes
-  live      : to get live builds of CSS & JS use 'LIVE_THEME=simple make run'
-  simple.:
-    build   : build simple theme
-    test    : test simple theme
+  live      : to get live builds of CSS & JS use 'make run'
+  build     : build theme
+  test      : test theme
 EOF
 }
 
-themes.all() {
-    (   set -e
-        pygments.less
-        node.env
-        themes.simple
-    )
-    dump_return $?
-}
-
 themes.live() {
-    local LIVE_THEME="${LIVE_THEME:-${1}}"
-    case "${LIVE_THEME}" in
-        simple)
-            theme="searx/static/themes/${LIVE_THEME}"
-            ;;
-        '')
-            die_caller 42 "missing theme argument"
-            ;;
-        *)
-            die_caller 42 "unknown theme '${LIVE_THEME}' // [simple]'"
-            ;;
-    esac
-    build_msg GRUNT "theme: $1 (live build)"
+    build_msg GRUNT "theme (live build)"
     nodejs.ensure
-    cd "${theme}"
     {
         npm install
         npm run watch
@@ -48,18 +24,20 @@ themes.live() {
         | grep -E --ignore-case --color 'error[s]?[:]? |warning[s]?[:]? |'
 }
 
-themes.simple() {
+themes.build() {
     (   set -e
-        build_msg GRUNT "theme: simple"
-        npm --prefix searx/static/themes/simple run build
+        pygments.less
+        node.env
+        build_msg GRUNT "theme"
+        npm run build
     )
     dump_return $?
 }
 
-themes.simple.test() {
-    build_msg TEST "theme: simple"
+themes.test() {
+    build_msg TEST "theme"
     nodejs.ensure
-    npm --prefix searx/static/themes/simple install
-    npm --prefix searx/static/themes/simple run test
+    npm install
+    npm run test
     dump_return $?
 }

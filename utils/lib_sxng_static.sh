@@ -4,11 +4,11 @@
 
 STATIC_BUILD_COMMIT="[build] /static"
 STATIC_BUILT_PATHS=(
-    'searx/static/themes/simple/css'
-    'searx/static/themes/simple/js'
-    'searx/static/themes/simple/img'
-    'searx/templates/simple/searxng-wordmark.min.svg'
-    'searx/templates/simple/icons.html'
+    'searx/static/css'
+    'searx/static/js'
+    'searx/static/img'
+    'searx/templates/searxng-wordmark.min.svg'
+    'searx/templates/icons.html'
 )
 
 static.help(){
@@ -16,7 +16,7 @@ static.help(){
 static.build.:  ${STATIC_BUILD_COMMIT}
   commit    : build & commit /static folder
   drop      : drop last commit if it was previously done by static.build.commit
-  restore   : git restore of the /static folder (after themes.all)
+  restore   : git restore of the /static folder (after themes.build)
 EOF
 }
 
@@ -76,7 +76,7 @@ static.build.drop() {
 }
 
 static.build.commit() {
-    # call the "static.build.drop" command, then "themes.all" then commit the
+    # call the "static.build.drop" command, then "themes.build" then commit the
     # built files ($BUILT_PATHS).
 
     build_msg STATIC "build & commit /static files"
@@ -100,7 +100,7 @@ static.build.commit() {
 
     (   set -e
         # build the themes
-        themes.all
+        themes.build
 
         # add build files
         for built_path in "${STATIC_BUILT_PATHS[@]}"; do
@@ -115,7 +115,7 @@ static.build.commit() {
 
         # check for modified files that are not staged
         if [ -n "$(git diff --name-only)" ]; then
-            die 42 "themes.all has created files that are not in STATIC_BUILT_PATHS"
+            die 42 "themes.build has created files that are not in STATIC_BUILT_PATHS"
         fi
         git commit -m "${STATIC_BUILD_COMMIT}"
     )

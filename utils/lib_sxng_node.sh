@@ -22,8 +22,8 @@ nodejs.ensure() {
 node.env() {
     nodejs.ensure
     (   set -e
-        build_msg INSTALL "./searx/static/themes/simple/package.json"
-        npm --prefix searx/static/themes/simple install
+        build_msg INSTALL "./package.json"
+        npm install
     )
     dump_return $?
 }
@@ -41,7 +41,7 @@ node.clean() {
     fi
     build_msg CLEAN "themes -- locally installed npm dependencies"
     (   set -e
-        npm --prefix searx/static/themes/simple run clean
+        npm run clean
     )
     build_msg CLEAN "locally installed developer and CI tools"
     (   set -e

@@ -24,7 +24,8 @@ Sample response
        "images",
      ],
      "default_locale": "",
-     "default_theme": "simple",
+     "default_light_style": "light",
+     "default_dark_style": "dark",
      "engines": [
        {
          "categories": [

@@ -16,9 +16,8 @@
      infinite_scroll: false
      center_alignment: false
      cache_url: https://web.archive.org/web/
-     default_theme: simple
-     theme_args:
-       simple_style: auto
+     default_light_style: light
+     default_dark_style: dark
      search_on_category_select: true
      hotkeys: default
 
@@ -43,7 +42,7 @@
 ``center_alignment`` : default ``false``
   When enabled, the results are centered instead of being in the left (or RTL)
   side of the screen.  This setting only affects the *desktop layout*
-  (:origin:`min-width: @tablet <searx/static/themes/simple/src/less/definitions.less>`)
+  (:origin:`min-width: @tablet <src/less/definitions.less>`)
 
 .. cache_url:
 
@@ -54,11 +53,11 @@
   - https://webcache.googleusercontent.com/search?q=cache:
   - https://archive.today/
 
-``default_theme`` :
-  Name of the theme you want to use by default on your SearXNG instance.
+``default_light_style``:
+  Name of the light style you want to use by default on your SearXNG instance.
 
-``theme_args.simple_style``:
-  Style of simple theme: ``auto``, ``light``, ``dark``
+``default_dark_style``:
+  Name of the dark style you want to use by default on your SearXNG instance.
 
 ``results_on_new_tab``:
   Open result links in a new tab by default.

@@ -26,10 +26,9 @@ server:
 ui:
   static_path: ""
   templates_path: ""
-  default_theme: simple
+  default_light_style: light
+  default_dark_style: dark
   default_locale: ""
-  theme_args:
-    simple_style: auto
 
 engines:
   - name: wikidata

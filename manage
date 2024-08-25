@@ -123,7 +123,7 @@ webapp.run() {
     local parent_proc="$$"
     (
         if [ "${LIVE_THEME}" ]; then
-            ( themes.live "${LIVE_THEME}" )
+            ( themes.live )
             kill $parent_proc
         fi
     )&

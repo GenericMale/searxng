@@ -178,7 +178,7 @@ msgid "Uptime"
 msgstr "Drifftid"
 
 #. BRAND_CUSTOM_LINKS['ABOUT']
-#: searx/searxng.msg searx/templates/simple/base.html:50
+#: searx/searxng.msg searx/templates/base.html:50
 msgid "About"
 msgstr "Om"
 
@@ -342,7 +342,7 @@ msgid "No item found"
 msgstr "Inga artiklar hittade"
 
 #: searx/engines/qwant.py:281
-#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:332
+#: searx/templates/result_templates/images.html:23 searx/webapp.py:332
 msgid "Source"
 msgstr "Källa"
 
@@ -613,507 +613,507 @@ msgstr "Ta bort tracker-argument från den återgivna webbadressen"
 msgid "Convert between units"
 msgstr "Konvertera mellan enheter"
 
-#: searx/templates/simple/404.html:4
+#: searx/templates/404.html:4
 msgid "Page not found"
 msgstr "Sidan hittades inte"
 
-#: searx/templates/simple/404.html:6
+#: searx/templates/404.html:6
 #, python-format
 msgid "Go to %(search_page)s."
 msgstr "Gå till %(search_page)s."
 
-#: searx/templates/simple/404.html:6
+#: searx/templates/404.html:6
 msgid "search page"
 msgstr "söksida"
 
-#: searx/templates/simple/base.html:54
+#: searx/templates/base.html:54
 msgid "Donate"
 msgstr "Donera"
 
-#: searx/templates/simple/base.html:58
-#: searx/templates/simple/preferences.html:156
+#: searx/templates/base.html:58
+#: searx/templates/preferences.html:156
 msgid "Preferences"
 msgstr "Inställningar"
 
-#: searx/templates/simple/base.html:68
+#: searx/templates/base.html:68
 msgid "Powered by"
 msgstr "Drivet av"
 
-#: searx/templates/simple/base.html:68
+#: searx/templates/base.html:68
 msgid "a privacy-respecting, open metasearch engine"
 msgstr "en privatlivs-respekterande, öppen metasökmotor"
 
-#: searx/templates/simple/base.html:69
-#: searx/templates/simple/result_templates/packages.html:59
+#: searx/templates/base.html:69
+#: searx/templates/result_templates/packages.html:59
 msgid "Source code"
 msgstr "Källkod"
 
-#: searx/templates/simple/base.html:70
+#: searx/templates/base.html:70
 msgid "Issue tracker"
 msgstr "Ärendehanterare"
 
-#: searx/templates/simple/base.html:71 searx/templates/simple/stats.html:18
+#: searx/templates/base.html:71 searx/templates/stats.html:18
 msgid "Engine stats"
 msgstr "Sökmotor statistik"
 
-#: searx/templates/simple/base.html:73
+#: searx/templates/base.html:73
 msgid "Public instances"
 msgstr "Publika instanser"
 
-#: searx/templates/simple/base.html:76
+#: searx/templates/base.html:76
 msgid "Privacy policy"
 msgstr "Integritetspolicy"
 
-#: searx/templates/simple/base.html:79
+#: searx/templates/base.html:79
 msgid "Contact instance maintainer"
 msgstr "Kontakta instansens underhållare"
 
-#: searx/templates/simple/categories.html:26
+#: searx/templates/categories.html:26
 msgid "Click on the magnifier to perform search"
 msgstr "Klicka på förstoringsglaset för att utföra sökning"
 
-#: searx/templates/simple/macros.html:35
+#: searx/templates/macros.html:35
 msgid "Length"
 msgstr "Längd"
 
-#: searx/templates/simple/macros.html:36
+#: searx/templates/macros.html:36
 msgid "Views"
 msgstr "Visningar"
 
-#: searx/templates/simple/macros.html:37
-#: searx/templates/simple/result_templates/files.html:34
-#: searx/templates/simple/result_templates/images.html:19
-#: searx/templates/simple/result_templates/paper.html:6
+#: searx/templates/macros.html:37
+#: searx/templates/result_templates/files.html:34
+#: searx/templates/result_templates/images.html:19
+#: searx/templates/result_templates/paper.html:6
 msgid "Author"
 msgstr "Upphovsman"
 
-#: searx/templates/simple/macros.html:45
+#: searx/templates/macros.html:45
 msgid "cached"
 msgstr "cachad"
 
-#: searx/templates/simple/macros.html:45
+#: searx/templates/macros.html:45
 msgid "proxied"
 msgstr "proxade"
 
-#: searx/templates/simple/new_issue.html:64
+#: searx/templates/new_issue.html:64
 msgid "Start submiting a new issue on GitHub"
 msgstr "Rapportera ett nytt problem på GitHub"
 
-#: searx/templates/simple/new_issue.html:66
+#: searx/templates/new_issue.html:66
 msgid "Please check for existing bugs about this engine on GitHub"
 msgstr "Vänligen kolla efter befintliga buggar om denna motor på GitHub"
 
-#: searx/templates/simple/new_issue.html:69
+#: searx/templates/new_issue.html:69
 msgid "I confirm there is no existing bug about the issue I encounter"
 msgstr ""
 "Jag bekräftar att det inte finns någon befintlig bugg om problemet jag "
 "stöter på"
 
-#: searx/templates/simple/new_issue.html:71
+#: searx/templates/new_issue.html:71
 msgid "If this is a public instance, please specify the URL in the bug report"
 msgstr "Om detta är en offentlig instans, vänligen ange URL:en i felrapporten"
 
-#: searx/templates/simple/new_issue.html:72
+#: searx/templates/new_issue.html:72
 msgid "Submit a new issue on Github including the above information"
 msgstr "Skicka in ett nytt nummer på Github inklusive ovanstående information"
 
-#: searx/templates/simple/preferences.html:65
+#: searx/templates/preferences.html:65
 msgid "No HTTPS"
 msgstr "Ingen HTTPS"
 
-#: searx/templates/simple/elements/engines_msg.html:18
-#: searx/templates/simple/preferences.html:69
-#: searx/templates/simple/preferences.html:70
+#: searx/templates/elements/engines_msg.html:18
+#: searx/templates/preferences.html:69
+#: searx/templates/preferences.html:70
 msgid "View error logs and submit a bug report"
 msgstr "Visa felmeddelande och skicka en bugrapport"
 
-#: searx/templates/simple/preferences.html:74
+#: searx/templates/preferences.html:74
 msgid "!bang for this engine"
 msgstr "!bang för denna sökmotor"
 
-#: searx/templates/simple/preferences.html:80
+#: searx/templates/preferences.html:80
 msgid "!bang for its categories"
 msgstr "!bang för deras kategorier"
 
-#: searx/templates/simple/preferences.html:102
-#: searx/templates/simple/stats.html:64
+#: searx/templates/preferences.html:102
+#: searx/templates/stats.html:64
 msgid "Median"
 msgstr "Median"
 
-#: searx/templates/simple/preferences.html:103
-#: searx/templates/simple/stats.html:70
+#: searx/templates/preferences.html:103
+#: searx/templates/stats.html:70
 msgid "P80"
 msgstr "P80"
 
-#: searx/templates/simple/preferences.html:104
-#: searx/templates/simple/stats.html:76
+#: searx/templates/preferences.html:104
+#: searx/templates/stats.html:76
 msgid "P95"
 msgstr "P95"
 
-#: searx/templates/simple/preferences.html:136
+#: searx/templates/preferences.html:136
 msgid "Failed checker test(s): "
 msgstr "Underkända checker test(s): "
 
-#: searx/templates/simple/preferences.html:138
+#: searx/templates/preferences.html:138
 msgid "Errors:"
 msgstr "Fel:"
 
-#: searx/templates/simple/preferences.html:162
+#: searx/templates/preferences.html:162
 msgid "General"
 msgstr "Allmänt"
 
-#: searx/templates/simple/preferences.html:165
+#: searx/templates/preferences.html:165
 msgid "Default categories"
 msgstr "Standardkategorier"
 
-#: searx/templates/simple/preferences.html:187
+#: searx/templates/preferences.html:187
 msgid "User interface"
 msgstr "Användargränssnitt"
 
-#: searx/templates/simple/preferences.html:208
+#: searx/templates/preferences.html:208
 msgid "Privacy"
 msgstr "Sekretess"
 
-#: searx/templates/simple/preferences.html:221
+#: searx/templates/preferences.html:221
 msgid "Engines"
 msgstr "Sökmotorer"
 
-#: searx/templates/simple/preferences.html:223
+#: searx/templates/preferences.html:223
 msgid "Currently used search engines"
 msgstr "För närvarande använda sökmotorer"
 
-#: searx/templates/simple/preferences.html:231
+#: searx/templates/preferences.html:231
 msgid "Special Queries"
 msgstr "Särskilda förfrågningar"
 
-#: searx/templates/simple/preferences.html:237
+#: searx/templates/preferences.html:237
 msgid "Cookies"
 msgstr "Kakor"
 
-#: searx/templates/simple/results.html:23
+#: searx/templates/results.html:23
 msgid "Answers"
 msgstr "Svar"
 
-#: searx/templates/simple/results.html:42
+#: searx/templates/results.html:42
 msgid "Number of results"
 msgstr "Antal resultat"
 
-#: searx/templates/simple/results.html:48
+#: searx/templates/results.html:48
 msgid "Info"
 msgstr "Informera"
 
-#: searx/templates/simple/results.html:77
+#: searx/templates/results.html:77
 msgid "Try searching for:"
 msgstr "Försök söka efter:"
 
-#: searx/templates/simple/results.html:109
+#: searx/templates/results.html:109
 msgid "Back to top"
 msgstr "Tillbaka till början"
 
-#: searx/templates/simple/results.html:127
+#: searx/templates/results.html:127
 msgid "Previous page"
 msgstr "Föregående sida"
 
-#: searx/templates/simple/results.html:145
+#: searx/templates/results.html:145
 msgid "Next page"
 msgstr "Nästa sida"
 
-#: searx/templates/simple/search.html:3
+#: searx/templates/search.html:3
 msgid "Display the front page"
 msgstr "Visa förstasidan"
 
-#: searx/templates/simple/search.html:9
-#: searx/templates/simple/simple_search.html:5
+#: searx/templates/search.html:9
+#: searx/templates/simple_search.html:5
 msgid "Search for..."
 msgstr "Sök efter..."
 
-#: searx/templates/simple/search.html:10
-#: searx/templates/simple/simple_search.html:6
+#: searx/templates/search.html:10
+#: searx/templates/simple_search.html:6
 msgid "clear"
 msgstr "rensa"
 
-#: searx/templates/simple/search.html:11
-#: searx/templates/simple/simple_search.html:7
+#: searx/templates/search.html:11
+#: searx/templates/simple_search.html:7
 msgid "search"
 msgstr "sök"
 
-#: searx/templates/simple/stats.html:21
+#: searx/templates/stats.html:21
 msgid "There is currently no data available. "
 msgstr "Det finns för närvarande ingen data tillgänglig. "
 
-#: searx/templates/simple/preferences/engines.html:24
-#: searx/templates/simple/stats.html:25
+#: searx/templates/preferences/engines.html:24
+#: searx/templates/stats.html:25
 msgid "Engine name"
 msgstr "Sökmotorns namn"
 
-#: searx/templates/simple/stats.html:26
+#: searx/templates/stats.html:26
 msgid "Scores"
 msgstr "Poäng"
 
-#: searx/templates/simple/stats.html:27
+#: searx/templates/stats.html:27
 msgid "Result count"
 msgstr "Antal resultat"
 
-#: searx/templates/simple/preferences/engines.html:31
-#: searx/templates/simple/stats.html:28
+#: searx/templates/preferences/engines.html:31
+#: searx/templates/stats.html:28
 msgid "Response time"
 msgstr "Svarstid"
 
-#: searx/templates/simple/preferences/engines.html:35
-#: searx/templates/simple/stats.html:29
+#: searx/templates/preferences/engines.html:35
+#: searx/templates/stats.html:29
 msgid "Reliability"
 msgstr "Pålitlighet"
 
-#: searx/templates/simple/stats.html:59
+#: searx/templates/stats.html:59
 msgid "Total"
 msgstr "Total"
 
-#: searx/templates/simple/stats.html:60
+#: searx/templates/stats.html:60
 msgid "HTTP"
 msgstr "HTTP"
 
-#: searx/templates/simple/stats.html:61
+#: searx/templates/stats.html:61
 msgid "Processing"
 msgstr "Bearbetar"
 
-#: searx/templates/simple/stats.html:99
+#: searx/templates/stats.html:99
 msgid "Warnings"
 msgstr "Varningar"
 
-#: searx/templates/simple/stats.html:99
+#: searx/templates/stats.html:99
 msgid "Errors and exceptions"
 msgstr "Fel och undantag"
 
-#: searx/templates/simple/stats.html:105
+#: searx/templates/stats.html:105
 msgid "Exception"
 msgstr "Undantag"
 
-#: searx/templates/simple/stats.html:107
+#: searx/templates/stats.html:107
 msgid "Message"
 msgstr "Meddelande"
 
-#: searx/templates/simple/stats.html:109
+#: searx/templates/stats.html:109
 msgid "Percentage"
 msgstr "Procentsats"
 
-#: searx/templates/simple/stats.html:111
+#: searx/templates/stats.html:111
 msgid "Parameter"
 msgstr "Parameter"
 
-#: searx/templates/simple/result_templates/files.html:36
-#: searx/templates/simple/stats.html:119
+#: searx/templates/result_templates/files.html:36
+#: searx/templates/stats.html:119
 msgid "Filename"
 msgstr "Filnamn"
 
-#: searx/templates/simple/stats.html:120
+#: searx/templates/stats.html:120
 msgid "Function"
 msgstr "Funktion"
 
-#: searx/templates/simple/stats.html:121
+#: searx/templates/stats.html:121
 msgid "Code"
 msgstr "Kod"
 
-#: searx/templates/simple/stats.html:128
+#: searx/templates/stats.html:128
 msgid "Checker"
 msgstr "Kontrollera"
 
-#: searx/templates/simple/stats.html:131
+#: searx/templates/stats.html:131
 msgid "Failed test"
 msgstr "Misslyckade testet"
 
-#: searx/templates/simple/stats.html:132
+#: searx/templates/stats.html:132
 msgid "Comment(s)"
 msgstr "Kommentar(er)"
 
-#: searx/templates/simple/elements/apis.html:3
+#: searx/templates/elements/apis.html:3
 msgid "Download results"
 msgstr "Nedladdningsresultat"
 
-#: searx/templates/simple/elements/engines_msg.html:7
+#: searx/templates/elements/engines_msg.html:7
 msgid "Messages from the search engines"
 msgstr "Meddelanden från sökmotorerna"
 
-#: searx/templates/simple/elements/engines_msg.html:12
+#: searx/templates/elements/engines_msg.html:12
 msgid "Error!"
 msgstr "Fel!"
 
-#: searx/templates/simple/elements/engines_msg.html:13
+#: searx/templates/elements/engines_msg.html:13
 msgid "Engines cannot retrieve results"
 msgstr "Sökmotorerna kan inte hämta resultat"
 
-#: searx/templates/simple/elements/search_url.html:3
+#: searx/templates/elements/search_url.html:3
 msgid "Search URL"
 msgstr "Sök webbadress"
 
-#: searx/templates/simple/elements/search_url.html:4
-#: searx/templates/simple/preferences/cookies.html:54
+#: searx/templates/elements/search_url.html:4
+#: searx/templates/preferences/cookies.html:54
 msgid "Copied"
 msgstr "Kopierat"
 
-#: searx/templates/simple/elements/search_url.html:4
-#: searx/templates/simple/preferences/cookies.html:54
+#: searx/templates/elements/search_url.html:4
+#: searx/templates/preferences/cookies.html:54
 msgid "Copy"
 msgstr "Kopiera"
 
-#: searx/templates/simple/elements/suggestions.html:3
+#: searx/templates/elements/suggestions.html:3
 msgid "Suggestions"
 msgstr "Förslag"
 
-#: searx/templates/simple/filters/languages.html:1
-#: searx/templates/simple/preferences/language.html:2
+#: searx/templates/filters/languages.html:1
+#: searx/templates/preferences/language.html:2
 msgid "Search language"
 msgstr "Sökspråk"
 
-#: searx/templates/simple/filters/languages.html:4
-#: searx/templates/simple/preferences/language.html:7
+#: searx/templates/filters/languages.html:4
+#: searx/templates/preferences/language.html:7
 msgid "Default language"
 msgstr "Standardspråk"
 
-#: searx/templates/simple/filters/languages.html:8
-#: searx/templates/simple/preferences/language.html:11
+#: searx/templates/filters/languages.html:8
+#: searx/templates/preferences/language.html:11
 msgid "Auto-detect"
 msgstr "Upptäck automatiskt"
 
-#: searx/templates/simple/filters/safesearch.html:1
-#: searx/templates/simple/filters/safesearch.html:2
-#: searx/templates/simple/filters/safesearch.html:3
-#: searx/templates/simple/filters/safesearch.html:4
-#: searx/templates/simple/preferences/engines.html:27
-#: searx/templates/simple/preferences/safesearch.html:2
+#: searx/templates/filters/safesearch.html:1
+#: searx/templates/filters/safesearch.html:2
+#: searx/templates/filters/safesearch.html:3
+#: searx/templates/filters/safesearch.html:4
+#: searx/templates/preferences/engines.html:27
+#: searx/templates/preferences/safesearch.html:2
 msgid "SafeSearch"
 msgstr "Säker sökning"
 
-#: searx/templates/simple/filters/safesearch.html:2
-#: searx/templates/simple/preferences/safesearch.html:7
+#: searx/templates/filters/safesearch.html:2
+#: searx/templates/preferences/safesearch.html:7
 msgid "Strict"
 msgstr "Strikt"
 
-#: searx/templates/simple/filters/safesearch.html:3
-#: searx/templates/simple/preferences/safesearch.html:11
+#: searx/templates/filters/safesearch.html:3
+#: searx/templates/preferences/safesearch.html:11
 msgid "Moderate"
 msgstr "Måttlig"
 
-#: searx/templates/simple/filters/safesearch.html:4
-#: searx/templates/simple/preferences/safesearch.html:15
+#: searx/templates/filters/safesearch.html:4
+#: searx/templates/preferences/safesearch.html:15
 msgid "None"
 msgstr "Inga"
 
-#: searx/templates/simple/filters/time_range.html:1
-#: searx/templates/simple/preferences/engines.html:28
+#: searx/templates/filters/time_range.html:1
+#: searx/templates/preferences/engines.html:28
 msgid "Time range"
 msgstr "Tidsintervall"
 
-#: searx/templates/simple/filters/time_range.html:3
+#: searx/templates/filters/time_range.html:3
 msgid "Anytime"
 msgstr "Närsom"
 
-#: searx/templates/simple/filters/time_range.html:6
+#: searx/templates/filters/time_range.html:6
 msgid "Last day"
 msgstr "Igår"
 
-#: searx/templates/simple/filters/time_range.html:9
+#: searx/templates/filters/time_range.html:9
 msgid "Last week"
 msgstr "Förra veckan"
 
-#: searx/templates/simple/filters/time_range.html:12
+#: searx/templates/filters/time_range.html:12
 msgid "Last month"
 msgstr "Förra månaden"
 
-#: searx/templates/simple/filters/time_range.html:15
+#: searx/templates/filters/time_range.html:15
 msgid "Last year"
 msgstr "Förra året"
 
-#: searx/templates/simple/messages/no_cookies.html:3
+#: searx/templates/messages/no_cookies.html:3
 msgid "Information!"
 msgstr "Information!"
 
-#: searx/templates/simple/messages/no_cookies.html:4
+#: searx/templates/messages/no_cookies.html:4
 msgid "currently, there are no cookies defined."
 msgstr "för närvarande finns det inga kakor definierade."
 
-#: searx/templates/simple/messages/no_results.html:6
+#: searx/templates/messages/no_results.html:6
 msgid "Sorry!"
 msgstr "Ursäkta!"
 
-#: searx/templates/simple/messages/no_results.html:12
+#: searx/templates/messages/no_results.html:12
 msgid "No results were found. You can try to:"
 msgstr "Inga resultat hittades. Du kan prova att:"
 
-#: searx/templates/simple/messages/no_results.html:14
+#: searx/templates/messages/no_results.html:14
 msgid "There are no more results. You can try to:"
 msgstr "Det finns inga mer resultat. Du kan testa:"
 
-#: searx/templates/simple/messages/no_results.html:19
+#: searx/templates/messages/no_results.html:19
 msgid "Refresh the page."
 msgstr "Uppdatera sidan."
 
-#: searx/templates/simple/messages/no_results.html:20
+#: searx/templates/messages/no_results.html:20
 msgid "Search for another query or select another category (above)."
 msgstr "Sök efter en annan query eller välj en annan kategori (ovanför)."
 
-#: searx/templates/simple/messages/no_results.html:21
+#: searx/templates/messages/no_results.html:21
 msgid "Change the search engine used in the preferences:"
 msgstr "Ändra sökmotorn som används i inställningarna:"
 
-#: searx/templates/simple/messages/no_results.html:22
+#: searx/templates/messages/no_results.html:22
 msgid "Switch to another instance:"
 msgstr "Byt till en annan instans:"
 
-#: searx/templates/simple/messages/no_results.html:24
+#: searx/templates/messages/no_results.html:24
 msgid "Search for another query or select another category."
 msgstr "Sök med en annan query eller välj en annan kategori."
 
-#: searx/templates/simple/messages/no_results.html:25
+#: searx/templates/messages/no_results.html:25
 msgid "Go back to the previous page using the previous page button."
 msgstr "Gå till den förra sidan via knappen för förra sidan."
 
-#: searx/templates/simple/preferences/answerers.html:4
-#: searx/templates/simple/preferences/engines.html:23
+#: searx/templates/preferences/answerers.html:4
+#: searx/templates/preferences/engines.html:23
 msgid "Allow"
 msgstr "Tillåt"
 
-#: searx/templates/simple/preferences/answerers.html:5
+#: searx/templates/preferences/answerers.html:5
 msgid "Keywords"
 msgstr "Nyckelord"
 
-#: searx/templates/simple/preferences/answerers.html:6
-#: searx/templates/simple/result_templates/packages.html:7
+#: searx/templates/preferences/answerers.html:6
+#: searx/templates/result_templates/packages.html:7
 msgid "Name"
 msgstr "Namn"
 
-#: searx/templates/simple/preferences/answerers.html:7
+#: searx/templates/preferences/answerers.html:7
 msgid "Description"
 msgstr "Beskrivning"
 
-#: searx/templates/simple/preferences/answerers.html:8
+#: searx/templates/preferences/answerers.html:8
 msgid "Examples"
 msgstr "Exempel"
 
-#: searx/templates/simple/preferences/answerers.html:13
+#: searx/templates/preferences/answerers.html:13
 msgid "This is the list of SearXNG's instant answering modules."
 msgstr "Detta är listan med SearXNG:s direktsvarande moduler."
 
-#: searx/templates/simple/preferences/answerers.html:29
+#: searx/templates/preferences/answerers.html:29
 msgid "This is the list of plugins."
 msgstr "Detta är listan med plugins."
 
-#: searx/templates/simple/preferences/autocomplete.html:2
+#: searx/templates/preferences/autocomplete.html:2
 msgid "Autocomplete"
 msgstr "Slutför automatiskt"
 
-#: searx/templates/simple/preferences/autocomplete.html:15
+#: searx/templates/preferences/autocomplete.html:15
 msgid "Find stuff as you type"
 msgstr "Hitta saker medan du skriver"
 
-#: searx/templates/simple/preferences/center_alignment.html:2
+#: searx/templates/preferences/center_alignment.html:2
 msgid "Center Alignment"
 msgstr "Centrera"
 
-#: searx/templates/simple/preferences/center_alignment.html:14
+#: searx/templates/preferences/center_alignment.html:14
 msgid "Displays results in the center of the page (Oscar layout)."
 msgstr "Centrera resultat på sidan (Oscar layout)."
 
-#: searx/templates/simple/preferences/cookies.html:2
+#: searx/templates/preferences/cookies.html:2
 msgid ""
 "This is the list of cookies and their values SearXNG is storing on your "
 "computer."
@@ -1121,23 +1121,23 @@ msgstr ""
 "Detta är listan med kakor och dess värden som SearXNG förvarar på din "
 "dator."
 
-#: searx/templates/simple/preferences/cookies.html:3
+#: searx/templates/preferences/cookies.html:3
 msgid "With that list, you can assess SearXNG transparency."
 msgstr "Med den listan kan du bedöma SearXNG-transparens."
 
-#: searx/templates/simple/preferences/cookies.html:9
+#: searx/templates/preferences/cookies.html:9
 msgid "Cookie name"
 msgstr "Kaknamn"
 
-#: searx/templates/simple/preferences/cookies.html:10
+#: searx/templates/preferences/cookies.html:10
 msgid "Value"
 msgstr "Värde"
 
-#: searx/templates/simple/preferences/cookies.html:23
+#: searx/templates/preferences/cookies.html:23
 msgid "Search URL of the currently saved preferences"
 msgstr "Sökadressen för de för nuvarande sparade inställningarna"
 
-#: searx/templates/simple/preferences/cookies.html:32
+#: searx/templates/preferences/cookies.html:32
 msgid ""
 "Note: specifying custom settings in the search URL can reduce privacy by "
 "leaking data to the clicked result sites."
@@ -1145,11 +1145,11 @@ msgstr ""
 "Obs: Att ange anpassade inställningar i sökadressen kan minska sekretess "
 "genom att läcka data till de klickade resultatwebbplatserna."
 
-#: searx/templates/simple/preferences/cookies.html:35
+#: searx/templates/preferences/cookies.html:35
 msgid "URL to restore your preferences in another browser"
 msgstr "URL för att återställa dina inställningar i en annan webbläsare"
 
-#: searx/templates/simple/preferences/cookies.html:43
+#: searx/templates/preferences/cookies.html:43
 msgid ""
 "Specifying custom settings in the preferences URL can be used to sync "
 "preferences across devices."
@@ -1157,27 +1157,27 @@ msgstr ""
 "Dina anpassade inställningar i inställningarnas URL kan användas för att "
 "synkronisera inställningar mellan olika enheter."
 
-#: searx/templates/simple/preferences/cookies.html:46
+#: searx/templates/preferences/cookies.html:46
 msgid "Copy preferences hash"
 msgstr "kopiera inställningar hash"
 
-#: searx/templates/simple/preferences/cookies.html:57
+#: searx/templates/preferences/cookies.html:57
 msgid "Insert copied preferences hash (without URL) to restore"
 msgstr "Infoga kopierad inställningshash (utan URL) för att återställa"
 
-#: searx/templates/simple/preferences/cookies.html:59
+#: searx/templates/preferences/cookies.html:59
 msgid "Preferences hash"
 msgstr "inställningar hash"
 
-#: searx/templates/simple/preferences/doi_resolver.html:2
+#: searx/templates/preferences/doi_resolver.html:2
 msgid "Open Access DOI resolver"
 msgstr "Open Access DOI-lösare"
 
-#: searx/templates/simple/preferences/doi_resolver.html:14
+#: searx/templates/preferences/doi_resolver.html:14
 msgid "Select service used by DOI rewrite"
 msgstr "Välj tjänst för DOI-omskrivning"
 
-#: searx/templates/simple/preferences/engines.html:9
+#: searx/templates/preferences/engines.html:9
 msgid ""
 "This tab does not exists in the user interface, but you can search in "
 "these engines by its !bangs."
@@ -1185,31 +1185,31 @@ msgstr ""
 "Den här fliken finns inte i gränssnittet, men du kan söka i dessa "
 "sökmotorer med deras !bangs."
 
-#: searx/templates/simple/preferences/engines.html:15
+#: searx/templates/preferences/engines.html:15
 msgid "Enable all"
 msgstr "Aktivera samtliga"
 
-#: searx/templates/simple/preferences/engines.html:16
+#: searx/templates/preferences/engines.html:16
 msgid "Disable all"
 msgstr "Inaktivera samtliga"
 
-#: searx/templates/simple/preferences/engines.html:25
+#: searx/templates/preferences/engines.html:25
 msgid "!bang"
 msgstr "!bang"
 
-#: searx/templates/simple/preferences/engines.html:26
+#: searx/templates/preferences/engines.html:26
 msgid "Supports selected language"
 msgstr "Stöder valda språket"
 
-#: searx/templates/simple/preferences/engines.html:29
+#: searx/templates/preferences/engines.html:29
 msgid "Weight"
 msgstr "Vikt"
 
-#: searx/templates/simple/preferences/engines.html:33
+#: searx/templates/preferences/engines.html:33
 msgid "Max time"
 msgstr "Max tid"
 
-#: searx/templates/simple/preferences/footer.html:2
+#: searx/templates/preferences/footer.html:2
 msgid ""
 "These settings are stored in your cookies, this allows us not to store "
 "this data about you."
@@ -1217,7 +1217,7 @@ msgstr ""
 "Dessa inställningar lagras i dina kakor, vilket gör att vi inte lagrar "
 "data om dig."
 
-#: searx/templates/simple/preferences/footer.html:3
+#: searx/templates/preferences/footer.html:3
 msgid ""
 "These cookies serve your sole convenience, we don't use these cookies to "
 "track you."
@@ -1225,27 +1225,27 @@ msgstr ""
 "Dessa kakor tjänar din egen bekvämlighet, vi använder inte dessa kakor "
 "för att spåra dig."
 
-#: searx/templates/simple/preferences/footer.html:6
+#: searx/templates/preferences/footer.html:6
 msgid "Save"
 msgstr "Spara"
 
-#: searx/templates/simple/preferences/footer.html:9
+#: searx/templates/preferences/footer.html:9
 msgid "Reset defaults"
 msgstr "Återställ standardvärden"
 
-#: searx/templates/simple/preferences/footer.html:13
+#: searx/templates/preferences/footer.html:13
 msgid "Back"
 msgstr "Tillbaka"
 
-#: searx/templates/simple/preferences/hotkeys.html:2
+#: searx/templates/preferences/hotkeys.html:2
 msgid "Hotkeys"
 msgstr "Snabbtangenter"
 
-#: searx/templates/simple/preferences/hotkeys.html:13
+#: searx/templates/preferences/hotkeys.html:13
 msgid "Vim-like"
 msgstr "Vim-liknande"
 
-#: searx/templates/simple/preferences/hotkeys.html:18
+#: searx/templates/preferences/hotkeys.html:18
 msgid ""
 "Navigate search results with hotkeys (JavaScript required). Press \"h\" "
 "key on main or result page to get help."
@@ -1253,45 +1253,45 @@ msgstr ""
 "Navigera sök resultaten med snabbkommandon (behöver JavaScript). Tryck "
 "\"h\" tangenten på huvud eller resultat sidan för att få hjälp."
 
-#: searx/templates/simple/preferences/image_proxy.html:2
+#: searx/templates/preferences/image_proxy.html:2
 msgid "Image proxy"
 msgstr "Bildproxy"
 
-#: searx/templates/simple/preferences/image_proxy.html:14
+#: searx/templates/preferences/image_proxy.html:14
 msgid "Proxying image results through SearXNG"
 msgstr "Använder proxy för bildresultat via SearXNG"
 
-#: searx/templates/simple/preferences/infinite_scroll.html:2
+#: searx/templates/preferences/infinite_scroll.html:2
 msgid "Infinite scroll"
 msgstr "Oändlig bläddring"
 
-#: searx/templates/simple/preferences/infinite_scroll.html:14
+#: searx/templates/preferences/infinite_scroll.html:14
 msgid "Automatically load next page when scrolling to bottom of current page"
 msgstr "Ladda automatiskt nästa sida när du bläddrar till botten av aktuell sida"
 
-#: searx/templates/simple/preferences/language.html:24
+#: searx/templates/preferences/language.html:24
 msgid "What language do you prefer for search?"
 msgstr "Vilket språk föredrar du för att söka?"
 
-#: searx/templates/simple/preferences/language.html:25
+#: searx/templates/preferences/language.html:25
 msgid "Choose Auto-detect to let SearXNG detect the language of your query."
 msgstr ""
 "Välj Upptäck automatiskt för att tillåta SearXNG att upptäcka språket för"
 " din fråga."
 
-#: searx/templates/simple/preferences/method.html:2
+#: searx/templates/preferences/method.html:2
 msgid "HTTP Method"
 msgstr "HTTP metod"
 
-#: searx/templates/simple/preferences/method.html:14
+#: searx/templates/preferences/method.html:14
 msgid "Change how forms are submitted"
 msgstr "Ändra hur formulär skickas"
 
-#: searx/templates/simple/preferences/query_in_title.html:2
+#: searx/templates/preferences/query_in_title.html:2
 msgid "Query in the page's title"
 msgstr "Förfrågan i sidans titel"
 
-#: searx/templates/simple/preferences/query_in_title.html:14
+#: searx/templates/preferences/query_in_title.html:14
 msgid ""
 "When enabled, the result page's title contains your query. Your browser "
 "can record this title"
@@ -1299,23 +1299,23 @@ msgstr ""
 "När det är aktiverat innehåller resultatsidans titel din fråga. Din "
 "webbläsare kan spara denna titel"
 
-#: searx/templates/simple/preferences/results_on_new_tab.html:2
+#: searx/templates/preferences/results_on_new_tab.html:2
 msgid "Results on new tabs"
 msgstr "Resultat i nya flikar"
 
-#: searx/templates/simple/preferences/results_on_new_tab.html:14
+#: searx/templates/preferences/results_on_new_tab.html:14
 msgid "Open result links on new browser tabs"
 msgstr "Öppna resultat länkar i nya webbläsarflikar"
 
-#: searx/templates/simple/preferences/safesearch.html:20
+#: searx/templates/preferences/safesearch.html:20
 msgid "Filter content"
 msgstr "Filtrera innehåll"
 
-#: searx/templates/simple/preferences/search_on_category_select.html:2
+#: searx/templates/preferences/search_on_category_select.html:2
 msgid "Search on category select"
 msgstr "Sök vid val av kategori"
 
-#: searx/templates/simple/preferences/search_on_category_select.html:14
+#: searx/templates/preferences/search_on_category_select.html:14
 msgid ""
 "Perform search immediately if a category selected. Disable to select "
 "multiple categories"
@@ -1323,195 +1323,195 @@ msgstr ""
 "Utför sökning omedelbart om en kategori väljs. Inaktivera för att välja "
 "flera kategorier"
 
-#: searx/templates/simple/preferences/theme.html:2
+#: searx/templates/preferences/theme.html:2
 msgid "Theme"
 msgstr "Tema"
 
-#: searx/templates/simple/preferences/theme.html:14
+#: searx/templates/preferences/theme.html:14
 msgid "Change SearXNG layout"
 msgstr "Ändra SearXNG-layout"
 
-#: searx/templates/simple/preferences/theme.html:19
+#: searx/templates/preferences/theme.html:19
 msgid "Theme style"
 msgstr "Tema stil"
 
-#: searx/templates/simple/preferences/theme.html:31
+#: searx/templates/preferences/theme.html:31
 msgid "Choose auto to follow your browser settings"
 msgstr "Välj auto för att använda webbläsarens inställningar"
 
-#: searx/templates/simple/preferences/tokens.html:2
+#: searx/templates/preferences/tokens.html:2
 msgid "Engine tokens"
 msgstr "Motortoken"
 
-#: searx/templates/simple/preferences/tokens.html:9
+#: searx/templates/preferences/tokens.html:9
 msgid "Access tokens for private engines"
 msgstr "Åtkomsttoken för privata motorer"
 
-#: searx/templates/simple/preferences/ui_locale.html:2
+#: searx/templates/preferences/ui_locale.html:2
 msgid "Interface language"
 msgstr "Gränssnittspråk"
 
-#: searx/templates/simple/preferences/ui_locale.html:14
+#: searx/templates/preferences/ui_locale.html:14
 msgid "Change the language of the layout"
 msgstr "Ändra språk för layouten"
 
-#: searx/templates/simple/result_templates/code.html:13
+#: searx/templates/result_templates/code.html:13
 msgid "repo"
 msgstr "kodförråd"
 
-#: searx/templates/simple/result_templates/default.html:6
-#: searx/templates/simple/result_templates/files.html:8
-#: searx/templates/simple/result_templates/files.html:11
+#: searx/templates/result_templates/default.html:6
+#: searx/templates/result_templates/files.html:8
+#: searx/templates/result_templates/files.html:11
 msgid "show media"
 msgstr "visa media"
 
-#: searx/templates/simple/result_templates/default.html:6
-#: searx/templates/simple/result_templates/files.html:8
+#: searx/templates/result_templates/default.html:6
+#: searx/templates/result_templates/files.html:8
 msgid "hide media"
 msgstr "göm media"
 
-#: searx/templates/simple/result_templates/default.html:14
-#: searx/templates/simple/result_templates/videos.html:14
+#: searx/templates/result_templates/default.html:14
+#: searx/templates/result_templates/videos.html:14
 msgid "This site did not provide any description."
 msgstr "Denna sida gav ingen beskrivning."
 
-#: searx/templates/simple/result_templates/files.html:38
-#: searx/templates/simple/result_templates/images.html:22
-#: searx/templates/simple/result_templates/torrent.html:11
+#: searx/templates/result_templates/files.html:38
+#: searx/templates/result_templates/images.html:22
+#: searx/templates/result_templates/torrent.html:11
 msgid "Filesize"
 msgstr "Filstorlek"
 
-#: searx/templates/simple/result_templates/files.html:40
+#: searx/templates/result_templates/files.html:40
 msgid "Date"
 msgstr "Datum"
 
-#: searx/templates/simple/result_templates/files.html:42
-#: searx/templates/simple/result_templates/paper.html:24
+#: searx/templates/result_templates/files.html:42
+#: searx/templates/result_templates/paper.html:24
 msgid "Type"
 msgstr "Typ"
 
-#: searx/templates/simple/result_templates/images.html:20
+#: searx/templates/result_templates/images.html:20
 msgid "Resolution"
 msgstr "Upplösning"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/result_templates/images.html:21
 msgid "Format"
 msgstr "Format"
 
-#: searx/templates/simple/result_templates/images.html:24
+#: searx/templates/result_templates/images.html:24
 msgid "Engine"
 msgstr "Sökmotor"
 
-#: searx/templates/simple/result_templates/images.html:25
+#: searx/templates/result_templates/images.html:25
 msgid "View source"
 msgstr "Visa källa"
 
-#: searx/templates/simple/result_templates/map.html:12
+#: searx/templates/result_templates/map.html:12
 msgid "address"
 msgstr "address"
 
-#: searx/templates/simple/result_templates/map.html:43
+#: searx/templates/result_templates/map.html:43
 msgid "show map"
 msgstr "visa karta"
 
-#: searx/templates/simple/result_templates/map.html:43
+#: searx/templates/result_templates/map.html:43
 msgid "hide map"
 msgstr "göm karta"
 
-#: searx/templates/simple/result_templates/packages.html:12
+#: searx/templates/result_templates/packages.html:12
 msgid "Version"
 msgstr "Version"
 
-#: searx/templates/simple/result_templates/packages.html:18
+#: searx/templates/result_templates/packages.html:18
 msgid "Maintainer"
 msgstr "Underhållare"
 
-#: searx/templates/simple/result_templates/packages.html:24
+#: searx/templates/result_templates/packages.html:24
 msgid "Updated at"
 msgstr "Uppdaterad vid"
 
-#: searx/templates/simple/result_templates/packages.html:30
-#: searx/templates/simple/result_templates/paper.html:25
+#: searx/templates/result_templates/packages.html:30
+#: searx/templates/result_templates/paper.html:25
 msgid "Tags"
 msgstr "Taggar"
 
-#: searx/templates/simple/result_templates/packages.html:36
+#: searx/templates/result_templates/packages.html:36
 msgid "Popularity"
 msgstr "Popularitet"
 
-#: searx/templates/simple/result_templates/packages.html:42
+#: searx/templates/result_templates/packages.html:42
 msgid "License"
 msgstr "Licens"
 
-#: searx/templates/simple/result_templates/packages.html:52
+#: searx/templates/result_templates/packages.html:52
 msgid "Project"
 msgstr "Projekt"
 
-#: searx/templates/simple/result_templates/packages.html:55
+#: searx/templates/result_templates/packages.html:55
 msgid "Project homepage"
 msgstr "Projekt hemsida"
 
-#: searx/templates/simple/result_templates/paper.html:5
+#: searx/templates/result_templates/paper.html:5
 msgid "Published date"
 msgstr "Publicerat datum"
 
-#: searx/templates/simple/result_templates/paper.html:9
+#: searx/templates/result_templates/paper.html:9
 msgid "Journal"
 msgstr "Journal"
 
-#: searx/templates/simple/result_templates/paper.html:22
+#: searx/templates/result_templates/paper.html:22
 msgid "Editor"
 msgstr "Ändrare"
 
-#: searx/templates/simple/result_templates/paper.html:23
+#: searx/templates/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "Publicerare"
 
-#: searx/templates/simple/result_templates/paper.html:26
+#: searx/templates/result_templates/paper.html:26
 msgid "DOI"
 msgstr "Digital identifierare"
 
-#: searx/templates/simple/result_templates/paper.html:27
+#: searx/templates/result_templates/paper.html:27
 msgid "ISSN"
 msgstr "ISSN"
 
-#: searx/templates/simple/result_templates/paper.html:28
+#: searx/templates/result_templates/paper.html:28
 msgid "ISBN"
 msgstr "ISBN"
 
-#: searx/templates/simple/result_templates/paper.html:33
+#: searx/templates/result_templates/paper.html:33
 msgid "PDF"
 msgstr "PDF"
 
-#: searx/templates/simple/result_templates/paper.html:34
+#: searx/templates/result_templates/paper.html:34
 msgid "HTML"
 msgstr "HTML"
 
-#: searx/templates/simple/result_templates/torrent.html:6
+#: searx/templates/result_templates/torrent.html:6
 msgid "magnet link"
 msgstr "magnetlänk"
 
-#: searx/templates/simple/result_templates/torrent.html:7
+#: searx/templates/result_templates/torrent.html:7
 msgid "torrent file"
 msgstr "torrentfil"
 
-#: searx/templates/simple/result_templates/torrent.html:9
+#: searx/templates/result_templates/torrent.html:9
 msgid "Seeder"
 msgstr "Distributör"
 
-#: searx/templates/simple/result_templates/torrent.html:9
+#: searx/templates/result_templates/torrent.html:9
 msgid "Leecher"
 msgstr "Reciprokör"
 
-#: searx/templates/simple/result_templates/torrent.html:13
+#: searx/templates/result_templates/torrent.html:13
 msgid "Number of Files"
 msgstr "Antal filer"
 
-#: searx/templates/simple/result_templates/videos.html:6
+#: searx/templates/result_templates/videos.html:6
 msgid "show video"
 msgstr "visa video"
 
-#: searx/templates/simple/result_templates/videos.html:6
+#: searx/templates/result_templates/videos.html:6
 msgid "hide video"
 msgstr "göm video"
 

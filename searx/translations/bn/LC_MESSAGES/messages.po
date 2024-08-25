@@ -172,7 +172,7 @@ msgid "Uptime"
 msgstr "চলনকাল"
 
 #. BRAND_CUSTOM_LINKS['ABOUT']
-#: searx/searxng.msg searx/templates/simple/base.html:50
+#: searx/searxng.msg searx/templates/base.html:50
 msgid "About"
 msgstr "সম্বন্ধে"
 
@@ -336,7 +336,7 @@ msgid "No item found"
 msgstr "কোন আইটেম পাওয়া যায়নি"
 
 #: searx/engines/qwant.py:281
-#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:332
+#: searx/templates/result_templates/images.html:23 searx/webapp.py:332
 msgid "Source"
 msgstr "উৎস"
 
@@ -604,531 +604,531 @@ msgstr "ফিরে আসা URL থেকে ট্র্যাকার আ�
 msgid "Convert between units"
 msgstr "এক একক থেকে অন্য এককে রুপান্তর"
 
-#: searx/templates/simple/404.html:4
+#: searx/templates/404.html:4
 msgid "Page not found"
 msgstr "পৃষ্ঠা খুঁজে পাওয়া যায়নি"
 
-#: searx/templates/simple/404.html:6
+#: searx/templates/404.html:6
 #, python-format
 msgid "Go to %(search_page)s."
 msgstr "%(search_page)s এ যান৷"
 
-#: searx/templates/simple/404.html:6
+#: searx/templates/404.html:6
 msgid "search page"
 msgstr "অনুসন্ধান পৃষ্ঠা"
 
-#: searx/templates/simple/base.html:54
+#: searx/templates/base.html:54
 msgid "Donate"
 msgstr "দান করুন"
 
-#: searx/templates/simple/base.html:58
-#: searx/templates/simple/preferences.html:156
+#: searx/templates/base.html:58
+#: searx/templates/preferences.html:156
 msgid "Preferences"
 msgstr "পছন্দসমূহ"
 
-#: searx/templates/simple/base.html:68
+#: searx/templates/base.html:68
 msgid "Powered by"
 msgstr "দ্বারা চালিত"
 
-#: searx/templates/simple/base.html:68
+#: searx/templates/base.html:68
 msgid "a privacy-respecting, open metasearch engine"
 msgstr "একটি গোপনীয়তা-সম্মানকারী, খোলা মেটাসার্চ ইঞ্জিন"
 
-#: searx/templates/simple/base.html:69
-#: searx/templates/simple/result_templates/packages.html:59
+#: searx/templates/base.html:69
+#: searx/templates/result_templates/packages.html:59
 msgid "Source code"
 msgstr "সোর্স কোড"
 
-#: searx/templates/simple/base.html:70
+#: searx/templates/base.html:70
 msgid "Issue tracker"
 msgstr "সমস্যা অনুসরণ"
 
-#: searx/templates/simple/base.html:71 searx/templates/simple/stats.html:18
+#: searx/templates/base.html:71 searx/templates/stats.html:18
 msgid "Engine stats"
 msgstr "ইঞ্জিন পরিসংখ্যান"
 
-#: searx/templates/simple/base.html:73
+#: searx/templates/base.html:73
 msgid "Public instances"
 msgstr "পাবলিক ইন্সট্যান্স"
 
-#: searx/templates/simple/base.html:76
+#: searx/templates/base.html:76
 msgid "Privacy policy"
 msgstr "গোপনীয়তা নীতি"
 
-#: searx/templates/simple/base.html:79
+#: searx/templates/base.html:79
 msgid "Contact instance maintainer"
 msgstr "ইন্সট্যান্স রক্ষণাবেক্ষণকারীর সাথে যোগাযোগ করুন"
 
-#: searx/templates/simple/categories.html:26
+#: searx/templates/categories.html:26
 msgid "Click on the magnifier to perform search"
 msgstr "অনুসন্ধান করতে ম্যাগনিফায়ার আইকনে ক্লিক করুন"
 
-#: searx/templates/simple/macros.html:35
+#: searx/templates/macros.html:35
 msgid "Length"
 msgstr "দৈর্ঘ্য"
 
-#: searx/templates/simple/macros.html:36
+#: searx/templates/macros.html:36
 msgid "Views"
 msgstr ""
 
-#: searx/templates/simple/macros.html:37
-#: searx/templates/simple/result_templates/files.html:34
-#: searx/templates/simple/result_templates/images.html:19
-#: searx/templates/simple/result_templates/paper.html:6
+#: searx/templates/macros.html:37
+#: searx/templates/result_templates/files.html:34
+#: searx/templates/result_templates/images.html:19
+#: searx/templates/result_templates/paper.html:6
 msgid "Author"
 msgstr "লেখক"
 
-#: searx/templates/simple/macros.html:45
+#: searx/templates/macros.html:45
 msgid "cached"
 msgstr "ক্যাশকৃত"
 
-#: searx/templates/simple/macros.html:45
+#: searx/templates/macros.html:45
 msgid "proxied"
 msgstr "প্রক্সিকৃত"
 
-#: searx/templates/simple/new_issue.html:64
+#: searx/templates/new_issue.html:64
 msgid "Start submiting a new issue on GitHub"
 msgstr "GitHub এ একটি নতুন সমস্যা জমা দেওয়া শুরু করুন"
 
-#: searx/templates/simple/new_issue.html:66
+#: searx/templates/new_issue.html:66
 msgid "Please check for existing bugs about this engine on GitHub"
 msgstr "GitHub এ এই ইঞ্জিন সম্পর্কে বিদ্যমান বাগগুলির জন্য দয়া করে পরীক্ষা করুন"
 
-#: searx/templates/simple/new_issue.html:69
+#: searx/templates/new_issue.html:69
 msgid "I confirm there is no existing bug about the issue I encounter"
 msgstr ""
 "আমি নিশ্চিত করছি যে আমি যে সমস্যার সম্মুখীন হচ্ছি সে সম্পর্কে কোন "
 "বিদ্যমান বাগ নেই"
 
-#: searx/templates/simple/new_issue.html:71
+#: searx/templates/new_issue.html:71
 msgid "If this is a public instance, please specify the URL in the bug report"
 msgstr ""
 "যদি এটি একটি পাবলিক ইন্সট্যান্স হয়, তবে অনুগ্রহ করে বাগ রিপোর্টে URL টি "
 "উল্লেখ করুন"
 
-#: searx/templates/simple/new_issue.html:72
+#: searx/templates/new_issue.html:72
 msgid "Submit a new issue on Github including the above information"
 msgstr "উপরের তথ্য সহ Github এ একটি নতুন সমস্যা জমা দিন"
 
-#: searx/templates/simple/preferences.html:65
+#: searx/templates/preferences.html:65
 msgid "No HTTPS"
 msgstr "HTTPS নেই"
 
-#: searx/templates/simple/elements/engines_msg.html:18
-#: searx/templates/simple/preferences.html:69
-#: searx/templates/simple/preferences.html:70
+#: searx/templates/elements/engines_msg.html:18
+#: searx/templates/preferences.html:69
+#: searx/templates/preferences.html:70
 msgid "View error logs and submit a bug report"
 msgstr "ত্রুটির লগগুলি দেখুন এবং একটি বাগ রিপোর্ট জমা দিন"
 
-#: searx/templates/simple/preferences.html:74
+#: searx/templates/preferences.html:74
 msgid "!bang for this engine"
 msgstr "!bang এই ইঞ্জিনের জন্য"
 
-#: searx/templates/simple/preferences.html:80
+#: searx/templates/preferences.html:80
 msgid "!bang for its categories"
 msgstr "!bang এই বিভাগের"
 
-#: searx/templates/simple/preferences.html:102
-#: searx/templates/simple/stats.html:64
+#: searx/templates/preferences.html:102
+#: searx/templates/stats.html:64
 msgid "Median"
 msgstr "মধ্যবর্তী"
 
-#: searx/templates/simple/preferences.html:103
-#: searx/templates/simple/stats.html:70
+#: searx/templates/preferences.html:103
+#: searx/templates/stats.html:70
 msgid "P80"
 msgstr "P80"
 
-#: searx/templates/simple/preferences.html:104
-#: searx/templates/simple/stats.html:76
+#: searx/templates/preferences.html:104
+#: searx/templates/stats.html:76
 msgid "P95"
 msgstr "P95"
 
-#: searx/templates/simple/preferences.html:136
+#: searx/templates/preferences.html:136
 msgid "Failed checker test(s): "
 msgstr "পরীক্ষা(গুলি) ব্যর্থ: "
 
-#: searx/templates/simple/preferences.html:138
+#: searx/templates/preferences.html:138
 msgid "Errors:"
 msgstr "ত্রুটি:"
 
-#: searx/templates/simple/preferences.html:162
+#: searx/templates/preferences.html:162
 msgid "General"
 msgstr "সাধারণ"
 
-#: searx/templates/simple/preferences.html:165
+#: searx/templates/preferences.html:165
 msgid "Default categories"
 msgstr "ডিফল্ট বিভাগ"
 
-#: searx/templates/simple/preferences.html:187
+#: searx/templates/preferences.html:187
 msgid "User interface"
 msgstr "ব‍্যবহারকারীর সম্মুখে প্রদর্শিত"
 
-#: searx/templates/simple/preferences.html:208
+#: searx/templates/preferences.html:208
 msgid "Privacy"
 msgstr "গোপনীয়তা"
 
-#: searx/templates/simple/preferences.html:221
+#: searx/templates/preferences.html:221
 msgid "Engines"
 msgstr "ইঞ্জিন"
 
-#: searx/templates/simple/preferences.html:223
+#: searx/templates/preferences.html:223
 msgid "Currently used search engines"
 msgstr "বর্তমানে ব্যবহৃত সার্চ ইঞ্জিন"
 
-#: searx/templates/simple/preferences.html:231
+#: searx/templates/preferences.html:231
 msgid "Special Queries"
 msgstr "বিশেষ প্রশ্ন"
 
-#: searx/templates/simple/preferences.html:237
+#: searx/templates/preferences.html:237
 msgid "Cookies"
 msgstr "কুকি"
 
-#: searx/templates/simple/results.html:23
+#: searx/templates/results.html:23
 msgid "Answers"
 msgstr "উত্তর"
 
-#: searx/templates/simple/results.html:42
+#: searx/templates/results.html:42
 msgid "Number of results"
 msgstr "ফলাফলের সংখ্যা"
 
-#: searx/templates/simple/results.html:48
+#: searx/templates/results.html:48
 msgid "Info"
 msgstr "তথ্য"
 
-#: searx/templates/simple/results.html:77
+#: searx/templates/results.html:77
 msgid "Try searching for:"
 msgstr "এটি খোঁজার চেষ্টা করুন:"
 
-#: searx/templates/simple/results.html:109
+#: searx/templates/results.html:109
 msgid "Back to top"
 msgstr "উপরে ফিরে যান"
 
-#: searx/templates/simple/results.html:127
+#: searx/templates/results.html:127
 msgid "Previous page"
 msgstr "পূর্ববর্তী পেইজ"
 
-#: searx/templates/simple/results.html:145
+#: searx/templates/results.html:145
 msgid "Next page"
 msgstr "পরবর্তী পেইজ"
 
-#: searx/templates/simple/search.html:3
+#: searx/templates/search.html:3
 msgid "Display the front page"
 msgstr "প্রথম পৃষ্ঠা দেখান"
 
-#: searx/templates/simple/search.html:9
-#: searx/templates/simple/simple_search.html:5
+#: searx/templates/search.html:9
+#: searx/templates/simple_search.html:5
 msgid "Search for..."
 msgstr "সার্চ করুন..।"
 
-#: searx/templates/simple/search.html:10
-#: searx/templates/simple/simple_search.html:6
+#: searx/templates/search.html:10
+#: searx/templates/simple_search.html:6
 msgid "clear"
 msgstr "পরিষ্কার"
 
-#: searx/templates/simple/search.html:11
-#: searx/templates/simple/simple_search.html:7
+#: searx/templates/search.html:11
+#: searx/templates/simple_search.html:7
 msgid "search"
 msgstr "অনুসন্ধান"
 
-#: searx/templates/simple/stats.html:21
+#: searx/templates/stats.html:21
 msgid "There is currently no data available. "
 msgstr "বর্তমানে কোন তথ্য পাওয়া যায়নি."
 
-#: searx/templates/simple/preferences/engines.html:24
-#: searx/templates/simple/stats.html:25
+#: searx/templates/preferences/engines.html:24
+#: searx/templates/stats.html:25
 msgid "Engine name"
 msgstr "ইঞ্জিনের নাম"
 
-#: searx/templates/simple/stats.html:26
+#: searx/templates/stats.html:26
 msgid "Scores"
 msgstr "স্কোর"
 
-#: searx/templates/simple/stats.html:27
+#: searx/templates/stats.html:27
 msgid "Result count"
 msgstr "ফলাফল গণনা"
 
-#: searx/templates/simple/preferences/engines.html:31
-#: searx/templates/simple/stats.html:28
+#: searx/templates/preferences/engines.html:31
+#: searx/templates/stats.html:28
 msgid "Response time"
 msgstr "প্রতিক্রিয়া সময়"
 
-#: searx/templates/simple/preferences/engines.html:35
-#: searx/templates/simple/stats.html:29
+#: searx/templates/preferences/engines.html:35
+#: searx/templates/stats.html:29
 msgid "Reliability"
 msgstr "নির্ভরযোগ্যতা"
 
-#: searx/templates/simple/stats.html:59
+#: searx/templates/stats.html:59
 msgid "Total"
 msgstr "মোট"
 
-#: searx/templates/simple/stats.html:60
+#: searx/templates/stats.html:60
 msgid "HTTP"
 msgstr "এইচটিটিপি"
 
-#: searx/templates/simple/stats.html:61
+#: searx/templates/stats.html:61
 msgid "Processing"
 msgstr "প্রক্রিয়ারত"
 
-#: searx/templates/simple/stats.html:99
+#: searx/templates/stats.html:99
 msgid "Warnings"
 msgstr "সতর্কতা"
 
-#: searx/templates/simple/stats.html:99
+#: searx/templates/stats.html:99
 msgid "Errors and exceptions"
 msgstr "ত্রুটি এবং ব্যতিক্রম"
 
-#: searx/templates/simple/stats.html:105
+#: searx/templates/stats.html:105
 msgid "Exception"
 msgstr "ব্যতিক্রম"
 
-#: searx/templates/simple/stats.html:107
+#: searx/templates/stats.html:107
 msgid "Message"
 msgstr "বার্তা"
 
-#: searx/templates/simple/stats.html:109
+#: searx/templates/stats.html:109
 msgid "Percentage"
 msgstr "শতাংশ"
 
-#: searx/templates/simple/stats.html:111
+#: searx/templates/stats.html:111
 msgid "Parameter"
 msgstr "প্যারামিটার"
 
-#: searx/templates/simple/result_templates/files.html:36
-#: searx/templates/simple/stats.html:119
+#: searx/templates/result_templates/files.html:36
+#: searx/templates/stats.html:119
 msgid "Filename"
 msgstr "ফাইলের নাম"
 
-#: searx/templates/simple/stats.html:120
+#: searx/templates/stats.html:120
 msgid "Function"
 msgstr "ফাংশন"
 
-#: searx/templates/simple/stats.html:121
+#: searx/templates/stats.html:121
 msgid "Code"
 msgstr "কোড"
 
-#: searx/templates/simple/stats.html:128
+#: searx/templates/stats.html:128
 msgid "Checker"
 msgstr "পরীক্ষক"
 
-#: searx/templates/simple/stats.html:131
+#: searx/templates/stats.html:131
 msgid "Failed test"
 msgstr "পরীক্ষায় ব্যর্থ"
 
-#: searx/templates/simple/stats.html:132
+#: searx/templates/stats.html:132
 msgid "Comment(s)"
 msgstr "মন্তব্য"
 
-#: searx/templates/simple/elements/apis.html:3
+#: searx/templates/elements/apis.html:3
 msgid "Download results"
 msgstr "ডাউনলোডগুলোর ফলাফল"
 
-#: searx/templates/simple/elements/engines_msg.html:7
+#: searx/templates/elements/engines_msg.html:7
 msgid "Messages from the search engines"
 msgstr "সার্চ ইঞ্জিন থেকে বার্তা"
 
-#: searx/templates/simple/elements/engines_msg.html:12
+#: searx/templates/elements/engines_msg.html:12
 msgid "Error!"
 msgstr "ত্রুটি!"
 
-#: searx/templates/simple/elements/engines_msg.html:13
+#: searx/templates/elements/engines_msg.html:13
 msgid "Engines cannot retrieve results"
 msgstr "ইঞ্জিন ফলাফল পুনরুদ্ধার করতে পারেছেনা"
 
-#: searx/templates/simple/elements/search_url.html:3
+#: searx/templates/elements/search_url.html:3
 msgid "Search URL"
 msgstr "সার্চ ইউআরএল"
 
-#: searx/templates/simple/elements/search_url.html:4
-#: searx/templates/simple/preferences/cookies.html:54
+#: searx/templates/elements/search_url.html:4
+#: searx/templates/preferences/cookies.html:54
 msgid "Copied"
 msgstr "অনুলিপি করা হয়েছে"
 
-#: searx/templates/simple/elements/search_url.html:4
-#: searx/templates/simple/preferences/cookies.html:54
+#: searx/templates/elements/search_url.html:4
+#: searx/templates/preferences/cookies.html:54
 msgid "Copy"
 msgstr "অনুলিপি"
 
-#: searx/templates/simple/elements/suggestions.html:3
+#: searx/templates/elements/suggestions.html:3
 msgid "Suggestions"
 msgstr "প্রস্তাবিত"
 
-#: searx/templates/simple/filters/languages.html:1
-#: searx/templates/simple/preferences/language.html:2
+#: searx/templates/filters/languages.html:1
+#: searx/templates/preferences/language.html:2
 msgid "Search language"
 msgstr "সার্চের ভাষা"
 
-#: searx/templates/simple/filters/languages.html:4
-#: searx/templates/simple/preferences/language.html:7
+#: searx/templates/filters/languages.html:4
+#: searx/templates/preferences/language.html:7
 msgid "Default language"
 msgstr "পূর্বনির্ধারিত ভাষা"
 
-#: searx/templates/simple/filters/languages.html:8
-#: searx/templates/simple/preferences/language.html:11
+#: searx/templates/filters/languages.html:8
+#: searx/templates/preferences/language.html:11
 msgid "Auto-detect"
 msgstr "স্বয়ং সনাক্ত"
 
-#: searx/templates/simple/filters/safesearch.html:1
-#: searx/templates/simple/filters/safesearch.html:2
-#: searx/templates/simple/filters/safesearch.html:3
-#: searx/templates/simple/filters/safesearch.html:4
-#: searx/templates/simple/preferences/engines.html:27
-#: searx/templates/simple/preferences/safesearch.html:2
+#: searx/templates/filters/safesearch.html:1
+#: searx/templates/filters/safesearch.html:2
+#: searx/templates/filters/safesearch.html:3
+#: searx/templates/filters/safesearch.html:4
+#: searx/templates/preferences/engines.html:27
+#: searx/templates/preferences/safesearch.html:2
 msgid "SafeSearch"
 msgstr "নিরাপদ সার্চ"
 
-#: searx/templates/simple/filters/safesearch.html:2
-#: searx/templates/simple/preferences/safesearch.html:7
+#: searx/templates/filters/safesearch.html:2
+#: searx/templates/preferences/safesearch.html:7
 msgid "Strict"
 msgstr "কঠোর"
 
-#: searx/templates/simple/filters/safesearch.html:3
-#: searx/templates/simple/preferences/safesearch.html:11
+#: searx/templates/filters/safesearch.html:3
+#: searx/templates/preferences/safesearch.html:11
 msgid "Moderate"
 msgstr "মধ্যম"
 
-#: searx/templates/simple/filters/safesearch.html:4
-#: searx/templates/simple/preferences/safesearch.html:15
+#: searx/templates/filters/safesearch.html:4
+#: searx/templates/preferences/safesearch.html:15
 msgid "None"
 msgstr "নেই"
 
-#: searx/templates/simple/filters/time_range.html:1
-#: searx/templates/simple/preferences/engines.html:28
+#: searx/templates/filters/time_range.html:1
+#: searx/templates/preferences/engines.html:28
 msgid "Time range"
 msgstr "সময়সীমা"
 
-#: searx/templates/simple/filters/time_range.html:3
+#: searx/templates/filters/time_range.html:3
 msgid "Anytime"
 msgstr "যেকোনো সময়"
 
-#: searx/templates/simple/filters/time_range.html:6
+#: searx/templates/filters/time_range.html:6
 msgid "Last day"
 msgstr "শেষ দিন"
 
-#: searx/templates/simple/filters/time_range.html:9
+#: searx/templates/filters/time_range.html:9
 msgid "Last week"
 msgstr "শেষ সপ্তাহ"
 
-#: searx/templates/simple/filters/time_range.html:12
+#: searx/templates/filters/time_range.html:12
 msgid "Last month"
 msgstr "শেষ মাস"
 
-#: searx/templates/simple/filters/time_range.html:15
+#: searx/templates/filters/time_range.html:15
 msgid "Last year"
 msgstr "শেষ বছর"
 
-#: searx/templates/simple/messages/no_cookies.html:3
+#: searx/templates/messages/no_cookies.html:3
 msgid "Information!"
 msgstr "তথ্য!"
 
-#: searx/templates/simple/messages/no_cookies.html:4
+#: searx/templates/messages/no_cookies.html:4
 msgid "currently, there are no cookies defined."
 msgstr "বর্তমানে, কোন কুকি সংজ্ঞায়িত নেই।"
 
-#: searx/templates/simple/messages/no_results.html:6
+#: searx/templates/messages/no_results.html:6
 msgid "Sorry!"
 msgstr "দুঃখিত!"
 
-#: searx/templates/simple/messages/no_results.html:12
+#: searx/templates/messages/no_results.html:12
 msgid "No results were found. You can try to:"
 msgstr "কোন ফলাফল পাওয়া যায়নি। তুমি চেষ্টা করতে পারো:"
 
-#: searx/templates/simple/messages/no_results.html:14
+#: searx/templates/messages/no_results.html:14
 msgid "There are no more results. You can try to:"
 msgstr "আর কোন ফলাফল নেই। তুমি চেষ্টা করতে পারো:"
 
-#: searx/templates/simple/messages/no_results.html:19
+#: searx/templates/messages/no_results.html:19
 msgid "Refresh the page."
 msgstr "পাতা হালনাগাদ করো।"
 
-#: searx/templates/simple/messages/no_results.html:20
+#: searx/templates/messages/no_results.html:20
 msgid "Search for another query or select another category (above)."
 msgstr "অন্য কোনো তথ্য খুঁজো বা অন্য কোনো বিভাগ নির্বাচন করো (উপরে)।"
 
-#: searx/templates/simple/messages/no_results.html:21
+#: searx/templates/messages/no_results.html:21
 msgid "Change the search engine used in the preferences:"
 msgstr "অনুসন্ধান ইঞ্জিন পছন্দসমূহ থেকে পাল্টাও:"
 
-#: searx/templates/simple/messages/no_results.html:22
+#: searx/templates/messages/no_results.html:22
 msgid "Switch to another instance:"
 msgstr "অন্য ইন্সট্যান্স ব্যবহার করো:"
 
-#: searx/templates/simple/messages/no_results.html:24
+#: searx/templates/messages/no_results.html:24
 msgid "Search for another query or select another category."
 msgstr "অন্য কোনো তথ্য খুঁজো বা অন্য কোনো বিভাগ নির্বাচন করো।"
 
-#: searx/templates/simple/messages/no_results.html:25
+#: searx/templates/messages/no_results.html:25
 msgid "Go back to the previous page using the previous page button."
 msgstr "আগের পাতায় ফিরত যেতে পিছনে যাওয়ার বোতামে টিপ দাও।"
 
-#: searx/templates/simple/preferences/answerers.html:4
-#: searx/templates/simple/preferences/engines.html:23
+#: searx/templates/preferences/answerers.html:4
+#: searx/templates/preferences/engines.html:23
 msgid "Allow"
 msgstr "অনুমোদন"
 
-#: searx/templates/simple/preferences/answerers.html:5
+#: searx/templates/preferences/answerers.html:5
 msgid "Keywords"
 msgstr "মূলশব্দ"
 
-#: searx/templates/simple/preferences/answerers.html:6
-#: searx/templates/simple/result_templates/packages.html:7
+#: searx/templates/preferences/answerers.html:6
+#: searx/templates/result_templates/packages.html:7
 msgid "Name"
 msgstr "নাম"
 
-#: searx/templates/simple/preferences/answerers.html:7
+#: searx/templates/preferences/answerers.html:7
 msgid "Description"
 msgstr "বর্ণনা"
 
-#: searx/templates/simple/preferences/answerers.html:8
+#: searx/templates/preferences/answerers.html:8
 msgid "Examples"
 msgstr "উদাহরণ"
 
-#: searx/templates/simple/preferences/answerers.html:13
+#: searx/templates/preferences/answerers.html:13
 msgid "This is the list of SearXNG's instant answering modules."
 msgstr "এটি SearXNG এর তাৎক্ষনিক উত্তর মডিউলগুলির তালিকা।"
 
-#: searx/templates/simple/preferences/answerers.html:29
+#: searx/templates/preferences/answerers.html:29
 msgid "This is the list of plugins."
 msgstr "এটি প্লাগইনগুলির তালিকা।"
 
-#: searx/templates/simple/preferences/autocomplete.html:2
+#: searx/templates/preferences/autocomplete.html:2
 msgid "Autocomplete"
 msgstr "স্বয়ংক্রিয়ভাবে পূরণ"
 
-#: searx/templates/simple/preferences/autocomplete.html:15
+#: searx/templates/preferences/autocomplete.html:15
 msgid "Find stuff as you type"
 msgstr "টাইপ করার সময় শব্দগুলো খুঁজুন"
 
-#: searx/templates/simple/preferences/center_alignment.html:2
+#: searx/templates/preferences/center_alignment.html:2
 msgid "Center Alignment"
 msgstr "মধ‍্যবর্তী বিন‍্যাস"
 
-#: searx/templates/simple/preferences/center_alignment.html:14
+#: searx/templates/preferences/center_alignment.html:14
 msgid "Displays results in the center of the page (Oscar layout)."
 msgstr "পেইজের মাঝখানে রেজাল্ট দেখান (অস্কার লেআউট)।"
 
-#: searx/templates/simple/preferences/cookies.html:2
+#: searx/templates/preferences/cookies.html:2
 msgid ""
 "This is the list of cookies and their values SearXNG is storing on your "
 "computer."
 msgstr "এটি কুকিজের তালিকা এবং সেগুলির মান SearXNG আপনার কম্পিউটারে সংরক্ষণ করছে।"
 
-#: searx/templates/simple/preferences/cookies.html:3
+#: searx/templates/preferences/cookies.html:3
 msgid "With that list, you can assess SearXNG transparency."
 msgstr "সেই তালিকা দিয়ে, আপনি SearXNG স্বচ্ছতা মূল্যায়ন করতে পারেন।"
 
-#: searx/templates/simple/preferences/cookies.html:9
+#: searx/templates/preferences/cookies.html:9
 msgid "Cookie name"
 msgstr "কুকির নাম"
 
-#: searx/templates/simple/preferences/cookies.html:10
+#: searx/templates/preferences/cookies.html:10
 msgid "Value"
 msgstr "মান"
 
-#: searx/templates/simple/preferences/cookies.html:23
+#: searx/templates/preferences/cookies.html:23
 msgid "Search URL of the currently saved preferences"
 msgstr "বর্তমানে সংরক্ষিত পছন্দের সার্চ ইউআরএল"
 
-#: searx/templates/simple/preferences/cookies.html:32
+#: searx/templates/preferences/cookies.html:32
 msgid ""
 "Note: specifying custom settings in the search URL can reduce privacy by "
 "leaking data to the clicked result sites."
@@ -1136,11 +1136,11 @@ msgstr ""
 "দ্রষ্টব্য: সার্চ ইউআরএলের কাস্টম সেটিংস নির্দিষ্ট করা হলে ক্লিক করা "
 "ফলাফলের সাইটগুলিতে ডেটা ফাঁস করে গোপনীয়তা হ্রাস করতে পারে।"
 
-#: searx/templates/simple/preferences/cookies.html:35
+#: searx/templates/preferences/cookies.html:35
 msgid "URL to restore your preferences in another browser"
 msgstr "ইউআরএল থেকে আপনার পছন্দগুলি অন্য ব্রাউজারে ফিরিয়ে নিন"
 
-#: searx/templates/simple/preferences/cookies.html:43
+#: searx/templates/preferences/cookies.html:43
 msgid ""
 "Specifying custom settings in the preferences URL can be used to sync "
 "preferences across devices."
@@ -1148,27 +1148,27 @@ msgstr ""
 "কাস্টম সেটিংস্‌গুলো প্রেফারেন্স ইউআরএলে উল্লেখিত করা হল যাতে করে আপনার "
 "প্রেফারেন্সগুলি ডিভাইস জুড়ে সিঙ্ক করে ব্যবহার করতে পারেন।"
 
-#: searx/templates/simple/preferences/cookies.html:46
+#: searx/templates/preferences/cookies.html:46
 msgid "Copy preferences hash"
 msgstr "পছন্দসমূহের হ্যাশ অনুলিপি"
 
-#: searx/templates/simple/preferences/cookies.html:57
+#: searx/templates/preferences/cookies.html:57
 msgid "Insert copied preferences hash (without URL) to restore"
 msgstr "অনুলিপিকৃত হ্যাশ এখানে দাও (ইউআরএল ছাড়া) ফিরত আনতে"
 
-#: searx/templates/simple/preferences/cookies.html:59
+#: searx/templates/preferences/cookies.html:59
 msgid "Preferences hash"
 msgstr "পছন্দসমূহের হ্যাশ"
 
-#: searx/templates/simple/preferences/doi_resolver.html:2
+#: searx/templates/preferences/doi_resolver.html:2
 msgid "Open Access DOI resolver"
 msgstr "উন্মুক্ত প্রবেশাধিকারযুক্ত DOI সমাধানদাতা"
 
-#: searx/templates/simple/preferences/doi_resolver.html:14
+#: searx/templates/preferences/doi_resolver.html:14
 msgid "Select service used by DOI rewrite"
 msgstr "পুনর্লিখিত DOI দ্বারা ব্যবহৃত সার্ভিস নির্বাচিত করুণ"
 
-#: searx/templates/simple/preferences/engines.html:9
+#: searx/templates/preferences/engines.html:9
 msgid ""
 "This tab does not exists in the user interface, but you can search in "
 "these engines by its !bangs."
@@ -1176,31 +1176,31 @@ msgstr ""
 "এই ট্যাবটি ইউজার ইন্টারফেসে নেই, কিন্তু আপনি এই ইঞ্জিনের !bangs ব্যবহার "
 "করে সার্চ করতে পারেন।"
 
-#: searx/templates/simple/preferences/engines.html:15
+#: searx/templates/preferences/engines.html:15
 msgid "Enable all"
 msgstr "সব সক্রিয় করুন"
 
-#: searx/templates/simple/preferences/engines.html:16
+#: searx/templates/preferences/engines.html:16
 msgid "Disable all"
 msgstr "সব নিস্ক্রিয় করুন"
 
-#: searx/templates/simple/preferences/engines.html:25
+#: searx/templates/preferences/engines.html:25
 msgid "!bang"
 msgstr "!bang"
 
-#: searx/templates/simple/preferences/engines.html:26
+#: searx/templates/preferences/engines.html:26
 msgid "Supports selected language"
 msgstr "নির্বাচিত ভাষা সমর্থন করে"
 
-#: searx/templates/simple/preferences/engines.html:29
+#: searx/templates/preferences/engines.html:29
 msgid "Weight"
 msgstr "ওজন"
 
-#: searx/templates/simple/preferences/engines.html:33
+#: searx/templates/preferences/engines.html:33
 msgid "Max time"
 msgstr "সর্বোচ্চ সময়"
 
-#: searx/templates/simple/preferences/footer.html:2
+#: searx/templates/preferences/footer.html:2
 msgid ""
 "These settings are stored in your cookies, this allows us not to store "
 "this data about you."
@@ -1208,7 +1208,7 @@ msgstr ""
 "এই সেটিংস আপনার কুকিজ সংরক্ষণ করা হয়, এটি আমাদের আপনার সম্পর্কে এই তথ্য "
 "সংরক্ষণ করার অনুমতি দেয় না।"
 
-#: searx/templates/simple/preferences/footer.html:3
+#: searx/templates/preferences/footer.html:3
 msgid ""
 "These cookies serve your sole convenience, we don't use these cookies to "
 "track you."
@@ -1216,27 +1216,27 @@ msgstr ""
 "এই কুকিজগুলি আপনার একমাত্র সুবিধা প্রদান করে, আমরা আপনাকে ট্র্যাক করতে এই"
 " কুকিগুলি ব্যবহার করি না।"
 
-#: searx/templates/simple/preferences/footer.html:6
+#: searx/templates/preferences/footer.html:6
 msgid "Save"
 msgstr "সংরক্ষণ"
 
-#: searx/templates/simple/preferences/footer.html:9
+#: searx/templates/preferences/footer.html:9
 msgid "Reset defaults"
 msgstr "ডিফল্টে রিসেট করুন"
 
-#: searx/templates/simple/preferences/footer.html:13
+#: searx/templates/preferences/footer.html:13
 msgid "Back"
 msgstr "পিছনে"
 
-#: searx/templates/simple/preferences/hotkeys.html:2
+#: searx/templates/preferences/hotkeys.html:2
 msgid "Hotkeys"
 msgstr "হটকি"
 
-#: searx/templates/simple/preferences/hotkeys.html:13
+#: searx/templates/preferences/hotkeys.html:13
 msgid "Vim-like"
 msgstr "ভিম-সদৃশ"
 
-#: searx/templates/simple/preferences/hotkeys.html:18
+#: searx/templates/preferences/hotkeys.html:18
 msgid ""
 "Navigate search results with hotkeys (JavaScript required). Press \"h\" "
 "key on main or result page to get help."
@@ -1244,45 +1244,45 @@ msgstr ""
 "অনুসন্ধানের ফলাফল হটকি দিয়ে পরিভ্রমণ করো (জাভাস্ক্রিপ্ট প্রয়োজন)। মূল "
 "পাতায় বা ফলাফল পাতায় \"h\" টিপ দাও সাহায্যের জন্য।"
 
-#: searx/templates/simple/preferences/image_proxy.html:2
+#: searx/templates/preferences/image_proxy.html:2
 msgid "Image proxy"
 msgstr "ছবির প্রক্সি"
 
-#: searx/templates/simple/preferences/image_proxy.html:14
+#: searx/templates/preferences/image_proxy.html:14
 msgid "Proxying image results through SearXNG"
 msgstr "SearXNG এর মাধ্যমে ছবির ফলাফল প্রক্সি করা হচ্ছে"
 
-#: searx/templates/simple/preferences/infinite_scroll.html:2
+#: searx/templates/preferences/infinite_scroll.html:2
 msgid "Infinite scroll"
 msgstr "অসীম স্ক্রল"
 
-#: searx/templates/simple/preferences/infinite_scroll.html:14
+#: searx/templates/preferences/infinite_scroll.html:14
 msgid "Automatically load next page when scrolling to bottom of current page"
 msgstr ""
 "বর্তমান পৃষ্ঠার নীচে স্ক্রোল করার সময় স্বয়ংক্রিয়ভাবে পরবর্তী পৃষ্ঠা "
 "লোড করুন"
 
-#: searx/templates/simple/preferences/language.html:24
+#: searx/templates/preferences/language.html:24
 msgid "What language do you prefer for search?"
 msgstr "আপনি অনুসন্ধানের জন্য কোন ভাষা পছন্দ করেন?"
 
-#: searx/templates/simple/preferences/language.html:25
+#: searx/templates/preferences/language.html:25
 msgid "Choose Auto-detect to let SearXNG detect the language of your query."
 msgstr "SearXNG কে আপনার প্রশ্নের ভাষা সনাক্ত করতে দিতে অটো-ডিটেক্ট বেছে নিন।"
 
-#: searx/templates/simple/preferences/method.html:2
+#: searx/templates/preferences/method.html:2
 msgid "HTTP Method"
 msgstr "এইচটিটিপি ধরণ"
 
-#: searx/templates/simple/preferences/method.html:14
+#: searx/templates/preferences/method.html:14
 msgid "Change how forms are submitted"
 msgstr "ফর্ম জমা দেওয়ার পদ্ধতি পরিবর্তন করুন"
 
-#: searx/templates/simple/preferences/query_in_title.html:2
+#: searx/templates/preferences/query_in_title.html:2
 msgid "Query in the page's title"
 msgstr "জিজ্ঞাসা পৃষ্ঠার শিরোনামে"
 
-#: searx/templates/simple/preferences/query_in_title.html:14
+#: searx/templates/preferences/query_in_title.html:14
 msgid ""
 "When enabled, the result page's title contains your query. Your browser "
 "can record this title"
@@ -1290,23 +1290,23 @@ msgstr ""
 "সক্রিয় করা হলে, ফলাফল পৃষ্ঠার শিরোনামে আপনার জিজ্ঞাসা থাকে। আপনার "
 "ব্রাউজার এই শিরোনাম রেকর্ড করতে পারেন"
 
-#: searx/templates/simple/preferences/results_on_new_tab.html:2
+#: searx/templates/preferences/results_on_new_tab.html:2
 msgid "Results on new tabs"
 msgstr "নতুন ট‍্যাবে রেজাল্ট রয়েছে"
 
-#: searx/templates/simple/preferences/results_on_new_tab.html:14
+#: searx/templates/preferences/results_on_new_tab.html:14
 msgid "Open result links on new browser tabs"
 msgstr "নতুন ব্রাউজার ট্যাবে ফলাফল লিঙ্ক খুলুন"
 
-#: searx/templates/simple/preferences/safesearch.html:20
+#: searx/templates/preferences/safesearch.html:20
 msgid "Filter content"
 msgstr "বাছাইকৃত উপাত্ত"
 
-#: searx/templates/simple/preferences/search_on_category_select.html:2
+#: searx/templates/preferences/search_on_category_select.html:2
 msgid "Search on category select"
 msgstr "বিভাগ নির্বাচন খুঁজে দেখুন"
 
-#: searx/templates/simple/preferences/search_on_category_select.html:14
+#: searx/templates/preferences/search_on_category_select.html:14
 msgid ""
 "Perform search immediately if a category selected. Disable to select "
 "multiple categories"
@@ -1314,195 +1314,195 @@ msgstr ""
 "বিভাগ নির্বাচনের সাথে সাথে অনুসন্ধান করো। অনেকগুলো বিভাগ অনুসন্ধান করতে "
 "নিষ্ক্রিয় করো"
 
-#: searx/templates/simple/preferences/theme.html:2
+#: searx/templates/preferences/theme.html:2
 msgid "Theme"
 msgstr "থিম"
 
-#: searx/templates/simple/preferences/theme.html:14
+#: searx/templates/preferences/theme.html:14
 msgid "Change SearXNG layout"
 msgstr "SearXNG এর লেআউট পরিবর্তন করুন"
 
-#: searx/templates/simple/preferences/theme.html:19
+#: searx/templates/preferences/theme.html:19
 msgid "Theme style"
 msgstr "থিমের ধরণ"
 
-#: searx/templates/simple/preferences/theme.html:31
+#: searx/templates/preferences/theme.html:31
 msgid "Choose auto to follow your browser settings"
 msgstr "আপনার ব্রাউজার সেটিংস অনুসরণ করার জন‍্য auto সিলেক্ট করুন"
 
-#: searx/templates/simple/preferences/tokens.html:2
+#: searx/templates/preferences/tokens.html:2
 msgid "Engine tokens"
 msgstr "ইঞ্জিন টোকেন"
 
-#: searx/templates/simple/preferences/tokens.html:9
+#: searx/templates/preferences/tokens.html:9
 msgid "Access tokens for private engines"
 msgstr "প্রাইভেট ইঞ্জিনের জন‍্য প্রবেশাধিকার টোকেন"
 
-#: searx/templates/simple/preferences/ui_locale.html:2
+#: searx/templates/preferences/ui_locale.html:2
 msgid "Interface language"
 msgstr "ইন্টারফেসের ভাষা"
 
-#: searx/templates/simple/preferences/ui_locale.html:14
+#: searx/templates/preferences/ui_locale.html:14
 msgid "Change the language of the layout"
 msgstr "লে আউটের ভাষা পরিবর্তন করুন"
 
-#: searx/templates/simple/result_templates/code.html:13
+#: searx/templates/result_templates/code.html:13
 msgid "repo"
 msgstr "ভাণ্ডার"
 
-#: searx/templates/simple/result_templates/default.html:6
-#: searx/templates/simple/result_templates/files.html:8
-#: searx/templates/simple/result_templates/files.html:11
+#: searx/templates/result_templates/default.html:6
+#: searx/templates/result_templates/files.html:8
+#: searx/templates/result_templates/files.html:11
 msgid "show media"
 msgstr "মিডিয়া দেখান"
 
-#: searx/templates/simple/result_templates/default.html:6
-#: searx/templates/simple/result_templates/files.html:8
+#: searx/templates/result_templates/default.html:6
+#: searx/templates/result_templates/files.html:8
 msgid "hide media"
 msgstr "মিডিয়া লুকান"
 
-#: searx/templates/simple/result_templates/default.html:14
-#: searx/templates/simple/result_templates/videos.html:14
+#: searx/templates/result_templates/default.html:14
+#: searx/templates/result_templates/videos.html:14
 msgid "This site did not provide any description."
 msgstr "এই সাইট কোন বিবরণ প্রদান করেনি।"
 
-#: searx/templates/simple/result_templates/files.html:38
-#: searx/templates/simple/result_templates/images.html:22
-#: searx/templates/simple/result_templates/torrent.html:11
+#: searx/templates/result_templates/files.html:38
+#: searx/templates/result_templates/images.html:22
+#: searx/templates/result_templates/torrent.html:11
 msgid "Filesize"
 msgstr "ফাইলের আকার"
 
-#: searx/templates/simple/result_templates/files.html:40
+#: searx/templates/result_templates/files.html:40
 msgid "Date"
 msgstr "তারিখ"
 
-#: searx/templates/simple/result_templates/files.html:42
-#: searx/templates/simple/result_templates/paper.html:24
+#: searx/templates/result_templates/files.html:42
+#: searx/templates/result_templates/paper.html:24
 msgid "Type"
 msgstr "ধরন"
 
-#: searx/templates/simple/result_templates/images.html:20
+#: searx/templates/result_templates/images.html:20
 msgid "Resolution"
 msgstr "আকার"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/result_templates/images.html:21
 msgid "Format"
 msgstr "সজ্জা"
 
-#: searx/templates/simple/result_templates/images.html:24
+#: searx/templates/result_templates/images.html:24
 msgid "Engine"
 msgstr "ইঞ্জিন"
 
-#: searx/templates/simple/result_templates/images.html:25
+#: searx/templates/result_templates/images.html:25
 msgid "View source"
 msgstr "উৎস দেখুন"
 
-#: searx/templates/simple/result_templates/map.html:12
+#: searx/templates/result_templates/map.html:12
 msgid "address"
 msgstr "ঠিকানা"
 
-#: searx/templates/simple/result_templates/map.html:43
+#: searx/templates/result_templates/map.html:43
 msgid "show map"
 msgstr "মানচিত্র দেখান"
 
-#: searx/templates/simple/result_templates/map.html:43
+#: searx/templates/result_templates/map.html:43
 msgid "hide map"
 msgstr "মানচিত্র লুকান"
 
-#: searx/templates/simple/result_templates/packages.html:12
+#: searx/templates/result_templates/packages.html:12
 msgid "Version"
 msgstr "সংস্করণ"
 
-#: searx/templates/simple/result_templates/packages.html:18
+#: searx/templates/result_templates/packages.html:18
 msgid "Maintainer"
 msgstr "পরিচালক"
 
-#: searx/templates/simple/result_templates/packages.html:24
+#: searx/templates/result_templates/packages.html:24
 msgid "Updated at"
 msgstr "হালনাগাদের সময়কাল"
 
-#: searx/templates/simple/result_templates/packages.html:30
-#: searx/templates/simple/result_templates/paper.html:25
+#: searx/templates/result_templates/packages.html:30
+#: searx/templates/result_templates/paper.html:25
 msgid "Tags"
 msgstr "ট্যাগসমূহ"
 
-#: searx/templates/simple/result_templates/packages.html:36
+#: searx/templates/result_templates/packages.html:36
 msgid "Popularity"
 msgstr "জনপ্রিয়তা"
 
-#: searx/templates/simple/result_templates/packages.html:42
+#: searx/templates/result_templates/packages.html:42
 msgid "License"
 msgstr "লাইসেন্স"
 
-#: searx/templates/simple/result_templates/packages.html:52
+#: searx/templates/result_templates/packages.html:52
 msgid "Project"
 msgstr "প্রকল্প"
 
-#: searx/templates/simple/result_templates/packages.html:55
+#: searx/templates/result_templates/packages.html:55
 msgid "Project homepage"
 msgstr "প্রকল্পের মূলপাতা"
 
-#: searx/templates/simple/result_templates/paper.html:5
+#: searx/templates/result_templates/paper.html:5
 msgid "Published date"
 msgstr "প্রকাশের তারিখ"
 
-#: searx/templates/simple/result_templates/paper.html:9
+#: searx/templates/result_templates/paper.html:9
 msgid "Journal"
 msgstr "দৈনিক সংবাদপত্র"
 
-#: searx/templates/simple/result_templates/paper.html:22
+#: searx/templates/result_templates/paper.html:22
 msgid "Editor"
 msgstr "সম্পাদক"
 
-#: searx/templates/simple/result_templates/paper.html:23
+#: searx/templates/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "প্রকাশক"
 
-#: searx/templates/simple/result_templates/paper.html:26
+#: searx/templates/result_templates/paper.html:26
 msgid "DOI"
 msgstr "DOI"
 
-#: searx/templates/simple/result_templates/paper.html:27
+#: searx/templates/result_templates/paper.html:27
 msgid "ISSN"
 msgstr "ISSN"
 
-#: searx/templates/simple/result_templates/paper.html:28
+#: searx/templates/result_templates/paper.html:28
 msgid "ISBN"
 msgstr "ISBN"
 
-#: searx/templates/simple/result_templates/paper.html:33
+#: searx/templates/result_templates/paper.html:33
 msgid "PDF"
 msgstr "পিডিএফ"
 
-#: searx/templates/simple/result_templates/paper.html:34
+#: searx/templates/result_templates/paper.html:34
 msgid "HTML"
 msgstr "HTML"
 
-#: searx/templates/simple/result_templates/torrent.html:6
+#: searx/templates/result_templates/torrent.html:6
 msgid "magnet link"
 msgstr "ম্যাগনেট লিঙ্ক"
 
-#: searx/templates/simple/result_templates/torrent.html:7
+#: searx/templates/result_templates/torrent.html:7
 msgid "torrent file"
 msgstr "টরেন্ট ফাইল"
 
-#: searx/templates/simple/result_templates/torrent.html:9
+#: searx/templates/result_templates/torrent.html:9
 msgid "Seeder"
 msgstr "সিডার"
 
-#: searx/templates/simple/result_templates/torrent.html:9
+#: searx/templates/result_templates/torrent.html:9
 msgid "Leecher"
 msgstr "লিচার"
 
-#: searx/templates/simple/result_templates/torrent.html:13
+#: searx/templates/result_templates/torrent.html:13
 msgid "Number of Files"
 msgstr "ফাইলের সংখ্যা"
 
-#: searx/templates/simple/result_templates/videos.html:6
+#: searx/templates/result_templates/videos.html:6
 msgid "show video"
 msgstr "ভিডিও দেখান"
 
-#: searx/templates/simple/result_templates/videos.html:6
+#: searx/templates/result_templates/videos.html:6
 msgid "hide video"
 msgstr "ভিডিও লুকিয়ে ফেলুন"
 

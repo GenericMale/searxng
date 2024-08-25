@@ -179,13 +179,8 @@ def get_json_response(sq: SearchQuery, rc: ResultContainer) -> str:
     return response
 
 
-def get_themes(templates_path):
-    """Returns available themes list."""
-    return os.listdir(templates_path)
-
-
 def get_styles(styles_path):
-    """Returns available styles for the simple theme."""
+    """Returns available styles."""
     return sorted(css.parent.name for css in pathlib.Path(styles_path).glob('*/style.css'))
 
 

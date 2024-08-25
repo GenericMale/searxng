@@ -190,11 +190,9 @@ SCHEMA = {
         'static_use_hash': SettingsValue(bool, False, 'SEARXNG_STATIC_USE_HASH'),
         'templates_path': SettingsDirectoryValue(str, os.path.join(searx_dir, 'templates')),
         'styles_path': SettingsDirectoryValue(str, os.path.join(searx_dir, 'static', 'styles')),
-        'default_theme': SettingsValue(str, 'simple'),
+        'default_light_style': SettingsValue(str, 'light'),
+        'default_dark_style': SettingsValue(str, 'dark'),
         'default_locale': SettingsValue(str, ''),
-        'theme_args': {
-            'simple_style': SettingsValue(str, 'auto'),
-        },
         'center_alignment': SettingsValue(bool, False),
         'results_on_new_tab': SettingsValue(bool, False),
         'advanced_search': SettingsValue(bool, False),

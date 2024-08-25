@@ -1,0 +1,22 @@
+<fieldset>{{- '' -}}
+  <legend id="pref_style">{{- _('Style') -}}</legend>{{- '' -}}
+  <div class="value">{{- '' -}}
+    <select name="style" aria-labelledby="pref_style">
+      <option value="auto"
+              {%- if 'auto' == style %} selected="selected" {%- endif -%}>
+        {{- _('Auto') -}}
+      </option>
+      {%- for name in theme_styles -%}
+        <option value="{{ name }}"
+                {%- if name == style %} selected="selected" {%- endif -%}>
+                {{- _(name) | capitalize -}}
+        </option>
+      {%- endfor -%}
+    </select>{{- '' -}}
+  </div>{{- '' -}}
+  <div class="description">
+    {{- _('Choose auto to follow your browser settings') -}}
+  </div>{{- '' -}}
+</fieldset>{{- '' -}}
+
+{%- include 'preferences/center_alignment.html' -%}

@@ -75,7 +75,6 @@ from searx.webutils import (
     highlight_content,
     get_static_files,
     get_result_templates,
-    get_themes,
     get_styles,
     exception_classname_to_text,
     new_hmac,
@@ -143,9 +142,9 @@ static_files = get_static_files(settings['ui']['static_path'])
 
 # about templates
 logger.debug('templates directory is %s', settings['ui']['templates_path'])
-default_theme = settings['ui']['default_theme']
+default_light_style = settings['ui']['default_light_style']
+default_dark_style = settings['ui']['default_dark_style']
 templates_path = settings['ui']['templates_path']
-themes = get_themes(templates_path)
 result_templates = get_result_templates(templates_path)
 styles_path = settings['ui']['styles_path']
 styles = get_styles(styles_path)
@@ -257,10 +256,7 @@ def code_highlighter(codelines, language=None):
     return html_code
 
 
-def get_result_template(theme_name: str, template_name: str):
-    themed_path = theme_name + '/result_templates/' + template_name
-    if themed_path in result_templates:
-        return themed_path
+def get_result_template(template_name: str):
     return 'result_templates/' + template_name
 
 
@@ -268,13 +264,6 @@ def custom_url_for(endpoint: str, **values):
     suffix = ""
     if endpoint == 'static' and values.get('filename'):
         file_hash = static_files.get(values['filename'])
-        if not file_hash:
-            # try file in the current theme
-            theme_name = request.preferences.get_value('theme')
-            filename_with_theme = "themes/{}/{}".format(theme_name, values['filename'])
-            file_hash = static_files.get(filename_with_theme)
-            if file_hash:
-                values['filename'] = filename_with_theme
         if get_setting('ui.static_use_hash') and file_hash:
             suffix = "?" + file_hash
     if endpoint == 'info' and 'locale' not in values:
@@ -366,7 +355,7 @@ def get_client_settings():
         'translations': get_translations(),
         'search_on_category_select': req_pref.get_value('search_on_category_select'),
         'hotkeys': req_pref.get_value('hotkeys'),
-        'theme_static_path': custom_url_for('static', filename='themes/simple'),
+        'static_path': custom_url_for('static', filename=''),
     }
 
 
@@ -398,8 +387,7 @@ def render(template_name: str, **kwargs):
     kwargs['advanced_search'] = request.preferences.get_value('advanced_search')
     kwargs['query_in_title'] = request.preferences.get_value('query_in_title')
     kwargs['safesearch'] = str(request.preferences.get_value('safesearch'))
-    kwargs['theme'] = request.preferences.get_value('theme')
-    kwargs['style'] = request.preferences.get_value('simple_style')
+    kwargs['style'] = request.preferences.get_value('style')
     kwargs['method'] = request.preferences.get_value('method')
     kwargs['categories_as_tabs'] = list(settings['categories_as_tabs'].keys())
     kwargs['categories'] = get_enabled_categories(settings['categories_as_tabs'].keys())
@@ -465,7 +453,7 @@ def render(template_name: str, **kwargs):
             kwargs['styles'].add(css)
 
     start_time = default_timer()
-    result = render_template('{}/{}'.format(kwargs['theme'], template_name), **kwargs)
+    result = render_template(template_name, **kwargs)
     request.render_time += default_timer() - start_time  # pylint: disable=assigning-non-slot
 
     return result
@@ -480,7 +468,7 @@ def pre_request():
 
     client_pref = ClientPref.from_http_request(request)
     # pylint: disable=redefined-outer-name
-    preferences = Preferences(themes, styles, list(categories.keys()), engines, plugins, client_pref)
+    preferences = Preferences(styles, list(categories.keys()), engines, plugins, client_pref)
 
     user_agent = request.headers.get('User-Agent', '').lower()
     if 'webkit' in user_agent and 'android' in user_agent:
@@ -1025,7 +1013,6 @@ def preferences():
         disabled_engines = disabled_engines,
         autocomplete_backends = autocomplete_backends,
         shortcuts = {y: x for x, y in engine_shortcuts.items()},
-        themes = themes,
         theme_styles = styles,
         plugins = plugins,
         doi_resolvers = settings['doi_resolvers'],
@@ -1248,9 +1235,8 @@ def opensearch():
 
 @app.route('/favicon.ico')
 def favicon():
-    theme = request.preferences.get_value("theme")
     return send_from_directory(
-        os.path.join(app.root_path, settings['ui']['static_path'], 'themes', theme, 'img'),  # pyright: ignore
+        os.path.join(app.root_path, settings['ui']['static_path'], 'img'),  # pyright: ignore
         'favicon.png',
         mimetype='image/vnd.microsoft.icon',
     )
@@ -1305,7 +1291,8 @@ def config():
             'default_locale': settings['ui']['default_locale'],
             'autocomplete': settings['search']['autocomplete'],
             'safe_search': settings['search']['safe_search'],
-            'default_theme': settings['ui']['default_theme'],
+            'default_light_style': settings['ui']['default_light_style'],
+            'default_dark_style': settings['ui']['default_dark_style'],
             'version': VERSION_STRING,
             'brand': {
                 'PRIVACYPOLICY_URL': get_setting('general.privacypolicy_url'),

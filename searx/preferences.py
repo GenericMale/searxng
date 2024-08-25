@@ -375,7 +375,6 @@ class Preferences:
 
     def __init__(
         self,
-        themes: List[str],
         styles: List[str],
         categories: List[str],
         engines: Dict[str, Engine],
@@ -425,11 +424,6 @@ class Preferences:
                     '2': 2
                 }
             ),
-            'theme': EnumStringSetting(
-                settings['ui']['default_theme'],
-                locked=is_locked('theme'),
-                choices=themes
-            ),
             'results_on_new_tab': BooleanSetting(
                 settings['ui']['results_on_new_tab'],
                 locked=is_locked('results_on_new_tab')
@@ -439,9 +433,9 @@ class Preferences:
                 locked=is_locked('doi_resolver'),
                 choices=DOI_RESOLVERS
             ),
-            'simple_style': EnumStringSetting(
-                settings['ui']['theme_args']['simple_style'],
-                locked=is_locked('simple_style'),
+            'style': EnumStringSetting(
+                'auto',
+                locked=is_locked('style'),
                 choices=styles + ['auto']
             ),
             'center_alignment': BooleanSetting(

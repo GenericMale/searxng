@@ -84,7 +84,7 @@ MANAGE += py.build py.clean
 MANAGE += pyenv pyenv.install pyenv.uninstall
 MANAGE += format.python
 MANAGE += test.yamllint test.pylint test.pyright test.black test.pybabel test.unit test.coverage test.robot test.rst test.clean
-MANAGE += themes.all themes.simple themes.simple.test pygments.less
+MANAGE += themes.build themes.test pygments.less
 MANAGE += static.build.commit static.build.drop static.build.restore
 MANAGE += nvm.install nvm.clean nvm.status nvm.nodejs
 
@@ -99,4 +99,4 @@ PHONY += docs docker themes
 
 docs: docs.html
 docker:  docker.build
-themes: themes.all
+themes: themes.build
