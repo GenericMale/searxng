@@ -376,6 +376,7 @@ class Preferences:
     def __init__(
         self,
         themes: List[str],
+        styles: List[str],
         categories: List[str],
         engines: Dict[str, Engine],
         plugins: Iterable[Plugin],
@@ -441,7 +442,7 @@ class Preferences:
             'simple_style': EnumStringSetting(
                 settings['ui']['theme_args']['simple_style'],
                 locked=is_locked('simple_style'),
-                choices=['', 'auto', 'light', 'dark']
+                choices=styles + ['auto']
             ),
             'center_alignment': BooleanSetting(
                 settings['ui']['center_alignment'],

@@ -13,7 +13,14 @@ from pygments.formatters.html import HtmlFormatter
 
 from searx import searx_dir
 
-LESS_FILE = Path(searx_dir) / 'static/themes/simple/src/generated/pygments.less'
+PYGMENTS_CSS_FILES = {
+    'static/styles/dark/pygments.css': 'lightbulb',
+    'static/styles/frappe/pygments.css': 'catppuccin-frappe',
+    'static/styles/latte/pygments.css': 'catppuccin-latte',
+    'static/styles/light/pygments.css': 'default',
+    'static/styles/macchiato/pygments.css': 'catppuccin-macchiato',
+    'static/styles/mocha/pygments.css': 'catppuccin-mocha',
+}
 
 HEADER = f"""\
 /*
@@ -21,23 +28,10 @@ HEADER = f"""\
    using pygments version {pygments.__version__}
 */
 
+.code-highlight {{
 """
 
-START_LIGHT_THEME = """
-.code-highlight {
-"""
-
-END_LIGHT_THEME = """
-}
-"""
-
-START_DARK_THEME = """
-.code-highlight-dark(){
-  .code-highlight {
-"""
-
-END_DARK_THEME = """
-  }
+FOOTER = """
 }
 """
 
@@ -55,18 +49,16 @@ class Formatter(HtmlFormatter):  # pylint: disable=missing-class-docstring
         return style_lines
 
 
-def generat_css(light_style, dark_style) -> str:
-    css = HEADER + START_LIGHT_THEME
-    for line in Formatter(style=light_style).get_style_lines():
+def generate_css(style_name) -> str:
+    css = HEADER
+    for line in Formatter(style=style_name).get_style_lines():
         css += '\n  ' + line
-    css += END_LIGHT_THEME + START_DARK_THEME
-    for line in Formatter(style=dark_style).get_style_lines():
-        css += '\n    ' + line
-    css += END_DARK_THEME
+    css += FOOTER
     return css
 
 
 if __name__ == '__main__':
-    print("update: %s" % LESS_FILE)
-    with LESS_FILE.open('w', encoding='utf8') as f:
-        f.write(generat_css('default', 'lightbulb'))
+    for file, style in PYGMENTS_CSS_FILES.items():
+        print("update: %s" % file)
+        with open(Path(searx_dir) / file, 'w', encoding='utf-8') as f:
+            f.write(generate_css(style))

@@ -125,7 +125,7 @@ class TestPreferences(SearxTestCase):  # pylint: disable=missing-class-docstring
     def test_encode(self):
         from searx.preferences import Preferences  # pylint: disable=import-outside-toplevel
 
-        pref = Preferences(['simple'], ['general'], {}, [])
+        pref = Preferences(['simple'], ['light', 'dark'], ['general'], {}, [])
         url_params = (
             'eJx1Vk1z4zYM_TXxRZNMd7eddg8-pe21nWnvGoiEJEQkofDDtvzrC1qSRdnbQxQTBA'
             'Hw8eGRCiJ27AnDsUOHHszBgOsSdHjU-Pr7HwfDCkweHCBFVmxHgxGPB7LiU4-eL9Px'
